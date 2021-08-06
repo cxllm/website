@@ -14,6 +14,8 @@ class Home extends React.Component {
 			url: undefined,
 			artist: undefined,
 		};
+	}
+	componentDidMount() {
 		this.updateLastFM();
 		setInterval(() => {
 			this.updateLastFM();

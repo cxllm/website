@@ -22,7 +22,6 @@ const projects = [
 ];
 class Projects extends React.Component {
 	render() {
-		console.log(this.props);
 		return (
 			<>
 				<div className="about">
@@ -30,9 +29,9 @@ class Projects extends React.Component {
 					<Socials />
 					<p>
 						Below you can find some of the projects I have worked on and links to
-						their home pages or source code. Some projects I haven't listed here are
-						on my <a href="https://github.com/cxllm">GitHub</a> so you can check them
-						out there
+						their home pages or source code. I haven't listed everything here,
+						however, you can find some more projects on my{" "}
+						<a href="https://github.com/cxllm">GitHub</a>
 					</p>
 				</div>
 				<div>
