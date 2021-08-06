@@ -40,8 +40,9 @@ class Home extends React.Component {
 				<h1>Callum - Page d'Accueil</h1>
 				<Socials />
 				<p className="text">
-					Programmeur britannique de 14 ans. Vous pouvez trouver une partie de mon
-					code sur mon <a href="https://github.com/cxllm">GitHub</a>. J'ai aussi fait{" "}
+					Salut! Je m'appelle Callum, et je suis un programmeur britannique de 14
+					ans. Vous pouvez trouver une partie de mon code sur mon{" "}
+					<a href="https://github.com/cxllm">GitHub</a>. J'ai aussi fait{" "}
 					<a href="https://notes.cxllm.xyz">un blog</a> où je poste parfois. Pour me
 					contacter, veuillez m'envoyer un email à{" "}
 					<a href="mailto:hello@cxllm.xyz">hello@cxllm.xyz</a> ou m'enovyer un
