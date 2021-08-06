@@ -11,8 +11,6 @@ import ProjectsFR from "./pages/projects-fr";
 import NotFoundFR from "./pages/404-fr";
 class App extends React.Component {
 	render() {
-		//@ts-ignore
-		console.log(window.location.pathname);
 		return (
 			<Router>
 				{window.location.pathname.startsWith("/fr") ? <NavbarFR /> : <Navbar />}

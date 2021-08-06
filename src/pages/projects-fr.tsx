@@ -23,7 +23,7 @@ class Projects extends React.Component {
 		return (
 			<>
 				<div className="about">
-					<h1>Callum - Projects</h1>
+					<h1>Callum - Projets</h1>
 					<Socials />
 					<p>
 						Sur cette page, vous pouvez trouver mes projets de code. Vous pouvez aussi
