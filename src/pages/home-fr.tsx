@@ -52,7 +52,7 @@ class Home extends React.Component {
 				<p className="spotify">
 					{this.state.song ? (
 						<a href={this.state.url}>
-							Écouter « {this.state.song} » par {this.state.artist}
+							J'écoute « {this.state.song} » par {this.state.artist}
 						</a>
 					) : (
 						""
