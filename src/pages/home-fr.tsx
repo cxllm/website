@@ -43,7 +43,7 @@ class Home extends React.Component {
 					Programmeur britannique de 14 ans. Vous pouvez trouver une partie de mon
 					code sur mon <a href="https://github.com/cxllm">GitHub</a>. J'ai aussi fait{" "}
 					<a href="https://notes.cxllm.xyz">un blog</a> où je poste parfois. Pour me
-					contactez, veuillez m'envoyer un email à{" "}
+					contacter, veuillez m'envoyer un email à{" "}
 					<a href="mailto:hello@cxllm.xyz">hello@cxllm.xyz</a> ou m'enovyer un
 					message sur{" "}
 					<a href="https://discord.com/users/536949735299219467">Discord</a> ou{" "}
