@@ -27,6 +27,7 @@ body {
 }
 a {
 	color: #0af;
+	text-decoration: none;
 }
 .project {
 	text-align: left;
@@ -46,6 +47,13 @@ a {
 	border-radius: 100%;
 	float: left;
 	padding: 0 10px;
+}
+.spotify a {
+	color: #1db954;
+	text-decoration: none;
+}
+.spotify {
+	padding: 10px 0;
 }
 @media screen and (max-width: 1000px) {
 	.content {

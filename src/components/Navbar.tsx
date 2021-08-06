@@ -15,7 +15,7 @@ class Navigation extends React.Component {
 					}}
 				>
 					<Container>
-						<Navbar.Brand href="#home">
+						<Navbar.Brand href="/">
 							<img src="/avatar.jpg" className="logo" alt="Logo"></img>
 						</Navbar.Brand>
 						<Navbar.Toggle aria-controls="responsive-navbar-nav" />

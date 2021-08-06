@@ -1,6 +1,37 @@
 import React from "react";
 import Socials from "../components/Socials";
 class Home extends React.Component {
+	state: {
+		song: string | undefined;
+		url: string | undefined;
+		artist: string | undefined;
+	};
+	//@ts-ignore
+	constructor(props) {
+		super(props);
+		this.state = {
+			song: undefined,
+			url: undefined,
+			artist: undefined,
+		};
+		this.updateLastFM();
+		setInterval(() => {
+			this.updateLastFM();
+		}, 30 * 1000);
+	}
+	updateLastFM() {
+		fetch("https://cxllm.xyz/api/last-fm")
+			.then((res) => res.json())
+			.then((res) => {
+				if (!res)
+					return this.setState({
+						song: undefined,
+						url: undefined,
+						artist: undefined,
+					});
+				this.setState({ song: res.song, url: res.url, artist: res.artist });
+			});
+	}
 	render() {
 		return (
 			<>
@@ -17,6 +48,15 @@ class Home extends React.Component {
 					can send me a message on{" "}
 					<a href="https://discord.com/users/536949735299219467">Discord</a> or{" "}
 					<a href="https://twitter.com/CX11M">Twitter</a>.
+				</p>
+				<p className="spotify">
+					{this.state.song ? (
+						<a href={this.state.url}>
+							Listening to {this.state.song} by {this.state.artist}
+						</a>
+					) : (
+						""
+					)}
 				</p>
 			</>
 		);

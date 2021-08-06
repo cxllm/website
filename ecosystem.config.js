@@ -1,8 +1,8 @@
 module.exports = {
 	apps: [
 		{
-			name: "PersonalSite",
-			script: "yarn run prod",
+			name: "Backend",
+			script: "backend.js",
 			autorestart: true,
 			watch: false,
 		},
