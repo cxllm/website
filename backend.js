@@ -21,7 +21,7 @@ setInterval(async () => {
 	await updateLastFM();
 }, 30 * 1000);
 
-app.get("/last-fm", (_, res) => {
+app.get("/api/last-fm", (_, res) => {
 	return res.json(lastfm);
 });
 
