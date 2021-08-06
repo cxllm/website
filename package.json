@@ -23,7 +23,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"prod": "serve -s build -l 9755"
+		"publish": "npm build && yes | cp -r build/* /var/www/cxllm.xyz/"
 	},
 	"eslintConfig": {
 		"extends": [
