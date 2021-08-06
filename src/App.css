@@ -14,9 +14,6 @@ body {
 	width: 50px;
 	border-radius: 100%;
 }
-.color-nav {
-	background-color: #393939;
-}
 .content {
 	width: 50%;
 	transform: translate(50%, 50px);
@@ -59,7 +56,7 @@ a {
 	.content {
 		width: 100%;
 		transform: none;
-		padding: 0 10px;
+		padding: 10px 10px;
 	}
 	.about {
 		height: fit-content;

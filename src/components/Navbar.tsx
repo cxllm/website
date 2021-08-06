@@ -9,7 +9,6 @@ class Navigation extends React.Component {
 					expand="lg"
 					bg="dark"
 					variant="dark"
-					className="color-nav"
 					style={{
 						fontFamily: "Poppins",
 					}}
