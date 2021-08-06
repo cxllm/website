@@ -12,9 +12,6 @@ class Socials extends React.Component {
 				<a href="https://discord.com/users/536949735299219467">
 					<i className="fab fa-discord"></i>
 				</a>
-				<a href="https://pypi.org/user/cxllm">
-					<i className="fab fa-python"></i>
-				</a>
 				<a href="mailto:hello@cxllm.xyz">
 					<i className="fas fa-envelope"></i>
 				</a>
