@@ -24,5 +24,8 @@ setInterval(async () => {
 app.get("/api/last-fm", (_, res) => {
 	return res.json(lastfm);
 });
+app.get("*", (_, res) => {
+	return res.redirect("https://cxllm.xyz/API");
+});
 
 app.listen(9754);
