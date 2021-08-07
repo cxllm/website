@@ -41,10 +41,7 @@ class Navigation extends React.Component {
 									{/*<NavDropdown.Divider />
 								<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>*/}
 								</NavDropdown>
-								<NavDropdown title="Langue" id="collasible-nav-dropdown">
-									<NavDropdown.Item href="/">English</NavDropdown.Item>
-									<NavDropdown.Item href="/fr">Français</NavDropdown.Item>
-								</NavDropdown>
+								<Nav.Link href="/">English</Nav.Link>
 							</Nav>
 						</Navbar.Collapse>
 					</Container>

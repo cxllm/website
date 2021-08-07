@@ -22,6 +22,9 @@ body {
 .text {
 	padding: 0;
 }
+.not-found td {
+	width: 50%;
+}
 a {
 	color: #0af;
 	text-decoration: none;
