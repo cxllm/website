@@ -1,18 +1,22 @@
 import React from "react";
 import Socials from "../components/Socials";
-class Home extends React.Component {
+import Translations from "../translations/Home";
+import parse from "html-react-parser";
+type Props = {
+	lang: "en" | "fr";
+};
+class Home extends React.Component<Props> {
 	state: {
-		song: string | undefined;
-		url: string | undefined;
-		artist: string | undefined;
+		song: string;
+		url: string;
+		artist: string;
 	};
-	//@ts-ignore
-	constructor(props) {
+	constructor(props: Props) {
 		super(props);
 		this.state = {
-			song: undefined,
-			url: undefined,
-			artist: undefined,
+			song: "",
+			url: "",
+			artist: "",
 		};
 	}
 	componentDidMount() {
@@ -27,34 +31,27 @@ class Home extends React.Component {
 			.then((res) => {
 				if (!res)
 					return this.setState({
-						song: undefined,
-						url: undefined,
-						artist: undefined,
+						song: "",
+						url: "",
+						artist: "",
 					});
 				this.setState({ song: res.song, url: res.url, artist: res.artist });
 			});
 	}
 	render() {
+		const lang = this.props.lang;
+		const translation = Translations[lang];
 		return (
 			<>
-				<h1>Callum - Home</h1>
+				<h1>Callum - {translation.title}</h1>
 				<Socials />
-				<p className="text">
-					14 year old Python and TypeScript developer from the UK. You can find some
-					of my previous work (
-					<a href="https://github.com/cxllm/website">including this site</a>) on my{" "}
-					<a href="https://github.com/cxllm">GitHub</a>. I also made a{" "}
-					<a href="https://notes.cxllm.xyz">blog</a> where I post tutorials and other
-					random things. To contact me, please email me at{" "}
-					<a href="mailto:hello@cxllm.xyz">hello@cxllm.xyz</a>. Alternatively, you
-					can send me a message on{" "}
-					<a href="https://discord.com/users/536949735299219467">Discord</a> or{" "}
-					<a href="https://twitter.com/CX11M">Twitter</a>.
-				</p>
+				<p className="text">{parse(translation.text)}</p>
 				<p className="spotify">
 					{this.state.song ? (
 						<a href={this.state.url}>
-							Listening to {this.state.song} by {this.state.artist}
+							{translation.song
+								.replace("[song]", this.state.song)
+								.replace("[artist]", this.state.artist)}
 						</a>
 					) : (
 						""

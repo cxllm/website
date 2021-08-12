@@ -28,4 +28,6 @@ app.get("*", (_, res) => {
 	return res.redirect("https://cxllm.xyz/API");
 });
 
-app.listen(9754);
+app.listen(9754, () => {
+	console.log("Webserver started");
+});

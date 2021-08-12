@@ -1,41 +1,23 @@
 import React from "react";
 import Socials from "../components/Socials";
-const projects = [
-	{
-		name: "Corynth",
-		description:
-			"Slash command based discord bot with a lot of features. Based on discord.js master (v13), coded in TypeScript",
-		created: "December 2019",
-		end: "June 2021",
-		url: "https://github.com/cxllm/corynth",
-		image: "/corynth.png",
-	},
-	{
-		name: "Blog",
-		description:
-			"Site where I post articles, guides and other things. Coded in Python, utilising Markdown parsing and jinja2 templating",
-		created: "April 2021",
-		end: "Present",
-		url: "https://notes.cxllm.xyz",
-		image: "/avatar.jpg",
-	},
-];
-class Projects extends React.Component {
+import Translations from "../translations/Projects";
+import parse from "html-react-parser";
+type Props = {
+	lang: "en" | "fr";
+};
+class Projects extends React.Component<Props> {
 	render() {
+		const lang = this.props.lang;
+		const translation = Translations[lang];
 		return (
 			<>
 				<div className="about">
-					<h1>Callum - Projects</h1>
+					<h1>Callum - {translation.title}</h1>
 					<Socials />
-					<p>
-						Below you can find some of the projects I have worked on and links to
-						their home pages or source code. I haven't listed everything here,
-						however, you can find some more projects on my{" "}
-						<a href="https://github.com/cxllm">GitHub</a>
-					</p>
+					<p>{parse(translation.text)}</p>
 				</div>
 				<div>
-					{projects.map(
+					{translation.projects.map(
 						(
 							project: {
 								name: string;

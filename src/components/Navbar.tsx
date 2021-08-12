@@ -1,7 +1,14 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import React from "react";
-class Navigation extends React.Component {
+import Translations from "../translations/Navbar";
+type Props = {
+	lang: "en" | "fr";
+	setLang: Function;
+};
+class Navigation extends React.Component<Props> {
 	render() {
+		const lang = this.props.lang;
+		const translation = Translations[lang];
 		return (
 			<>
 				<Navbar
@@ -20,11 +27,11 @@ class Navigation extends React.Component {
 						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 						<Navbar.Collapse id="responsive-navbar-nav">
 							<Nav className="me-auto">
-								<Nav.Link href="/">Home</Nav.Link>
-								<Nav.Link href="/projects">Projects</Nav.Link>
+								<Nav.Link href="/">{translation.home}</Nav.Link>
+								<Nav.Link href="/projects">{translation.projects}</Nav.Link>
 							</Nav>
 							<Nav>
-								<NavDropdown title="Links" id="collasible-nav-dropdown">
+								<NavDropdown title={translation.links} id="collasible-nav-dropdown">
 									<NavDropdown.Item href="https://github.com/cxllm">
 										GitHub
 									</NavDropdown.Item>
@@ -41,7 +48,9 @@ class Navigation extends React.Component {
 									{/*<NavDropdown.Divider />
 								<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>*/}
 								</NavDropdown>
-								<Nav.Link href="/fr">Français</Nav.Link>
+								<Nav.Link onClick={() => this.props.setLang()}>
+									{translation.lang}
+								</Nav.Link>
 							</Nav>
 						</Navbar.Collapse>
 					</Container>
