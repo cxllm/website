@@ -19,21 +19,21 @@ class App extends React.Component<Props> {
 		let cookie = cookies.get("lang");
 		if (!cookie) {
 			cookies.set("lang", "en");
+			cookie = "en";
 		}
 		return cookie;
 	}
-	setLang = () => {
-		console.log(this);
+	setLang() {
 		const { cookies } = this.props;
 		let cookie = this.getLang();
 		console.log(cookie);
 		cookies.set("lang", cookie === "en" ? "fr" : "en");
 		window.location.reload();
-	};
+	}
 	render() {
 		return (
 			<Router>
-				<Navbar lang={this.getLang()} setLang={this.setLang} />
+				<Navbar lang={this.getLang()} setLang={() => this.setLang()} />
 				<div className="content">
 					<img src="/avatar.jpg" className="avatar" alt="Logo" />
 					<Switch>
