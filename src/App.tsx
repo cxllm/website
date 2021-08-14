@@ -28,7 +28,6 @@ class App extends React.Component<Props> {
 		let cookie = this.getLang();
 		console.log(cookie);
 		cookies.set("lang", cookie === "en" ? "fr" : "en");
-		window.location.reload();
 	}
 	render() {
 		return (
