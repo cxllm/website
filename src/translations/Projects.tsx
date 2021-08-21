@@ -28,15 +28,17 @@ const translations = {
 		projects: [
 			{
 				name: "Corynth",
-				description: "Un bot discord qui avait beaucoup de fonctionnalités",
-				created: "decmebre 2019",
+				description:
+					"Un bot discord qui avait beaucoup de fonctionnalités qui a été programmé avec discord.js et TypeScript",
+				created: "décembre 2019",
 				end: "juin 2021",
 				url: "https://github.com/cxllm/corynth",
 				image: "/corynth.png",
 			},
 			{
 				name: "Blog",
-				description: "Mon site web qui je poste les tutoriels parfois",
+				description:
+					"Mon site web qui je poste les tutoriels et les articles parfois en anglais qui a été programmé avec Python, Markdown et Jinja2 ",
 				created: "avril 2021",
 				end: "aujourd'hui",
 				url: "https://notes.cxllm.xyz",

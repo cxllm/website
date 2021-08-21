@@ -2,13 +2,15 @@ const translations = {
 	en: {
 		home: "Home",
 		projects: "Projects",
+		experience: "Experience",
 		links: "Links",
-		lang: "Français",
+		lang: "fr",
 	},
 	fr: {
 		home: "Page d'Accuiel",
 		projects: "Projets",
-		lang: "English",
+		experience: "Éxperience",
+		lang: "gb",
 		links: "Liens",
 	},
 };

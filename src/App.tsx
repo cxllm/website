@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/404";
 import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
 type Props = {
 	cookies: Cookies;
 };
@@ -40,6 +41,10 @@ class App extends React.Component<Props> {
 							exact
 							path="/"
 							render={(props) => <Home {...props} lang={this.getLang()} />}
+						/>
+						<Route
+							path="/experience"
+							render={(props) => <Experience {...props} lang={this.getLang()} />}
 						/>
 						<Route
 							path="/projects"

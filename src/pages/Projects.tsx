@@ -30,7 +30,7 @@ class Projects extends React.Component<Props> {
 							i: number
 						) => {
 							let element = (
-								<div className="project">
+								<div className="table-content">
 									<img
 										src={project.image}
 										style={{

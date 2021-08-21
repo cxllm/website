@@ -28,6 +28,7 @@ class Navigation extends React.Component<Props> {
 						<Navbar.Collapse id="responsive-navbar-nav">
 							<Nav className="me-auto">
 								<Nav.Link href="/">{translation.home}</Nav.Link>
+								<Nav.Link href="/experience">{translation.experience}</Nav.Link>
 								<Nav.Link href="/projects">{translation.projects}</Nav.Link>
 							</Nav>
 							<Nav>
@@ -49,7 +50,7 @@ class Navigation extends React.Component<Props> {
 								<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>*/}
 								</NavDropdown>
 								<Nav.Link onClick={() => this.props.setLang()}>
-									{translation.lang}
+									<span className={`flag-icon flag-icon-${translation.lang}`}></span>
 								</Nav.Link>
 							</Nav>
 						</Navbar.Collapse>

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css");
 * {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
@@ -29,7 +30,7 @@ a {
 	color: #0af;
 	text-decoration: none;
 }
-.project {
+.table-content {
 	text-align: left;
 	display: block;
 	padding: 10px 0;
@@ -55,6 +56,13 @@ a {
 .spotify {
 	padding: 0px 0;
 }
+.split td {
+	width: 50%;
+}
+.skills img {
+	padding: 10px;
+	height: 100px;
+}
 @media screen and (max-width: 1000px) {
 	.content {
 		width: 100%;
@@ -66,5 +74,9 @@ a {
 	}
 	.avatar {
 		float: none;
+	}
+	.split td {
+		width: 100%;
+		display: block;
 	}
 }
