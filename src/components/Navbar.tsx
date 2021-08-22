@@ -14,10 +14,10 @@ class Navigation extends React.Component<Props> {
 				<Navbar
 					collapseOnSelect
 					expand="lg"
-					bg="dark"
 					variant="dark"
 					style={{
 						fontFamily: "Poppins",
+						backgroundColor: "#272727",
 					}}
 				>
 					<Container>
@@ -32,6 +32,7 @@ class Navigation extends React.Component<Props> {
 								<Nav.Link href="/projects">{translation.projects}</Nav.Link>
 							</Nav>
 							<Nav>
+								<Nav.Link href="/contact">{translation.contact}</Nav.Link>
 								<NavDropdown title={translation.links} id="collasible-nav-dropdown">
 									<NavDropdown.Item href="https://github.com/cxllm">
 										GitHub
