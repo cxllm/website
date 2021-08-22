@@ -59,9 +59,15 @@ a {
 .split td {
 	width: 50%;
 }
-.skills img {
-	padding: 10px;
-	height: 100px;
+.skill img {
+	padding-right: 10px;
+	height: 75px;
+}
+.skill a {
+	padding-right: 10px;
+}
+td.skill {
+	width: 20%;
 }
 @media screen and (max-width: 1000px) {
 	.content {

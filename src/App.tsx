@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/404";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
 type Props = {
 	cookies: Cookies;
 };
@@ -49,6 +50,10 @@ class App extends React.Component<Props> {
 						<Route
 							path="/projects"
 							render={(props) => <Projects {...props} lang={this.getLang()} />}
+						/>
+						<Route
+							path="/contact"
+							render={(props) => <Contact {...props} lang={this.getLang()} />}
 						/>
 						<Route
 							exact

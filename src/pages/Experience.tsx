@@ -10,53 +10,88 @@ const skills = {
 		{
 			name: "TypeScript",
 			logo: "/typescript.png",
+			url: "https://www.typescriptlang.org",
 		},
 		{
 			name: "JavaScript",
 			logo: "/javascript.png",
+			url: "https://javascript.com",
 		},
 		{
 			name: "Python",
 			logo: "/python.png",
+			url: "https://python.org",
 		},
 		{
 			name: "HTML",
 			logo: "/html.png",
-			url: "https",
+			url: "https://www.w3.org/html/",
 		},
 		{
 			name: "CSS",
 			logo: "/css.png",
+			url: "https://www.w3.org/Style/CSS/Overview.en.html",
 		},
 	],
 	frameworks: [
 		{
 			name: "React",
 			logo: "/react.png",
+			url: "https://reactjs.org/",
 		},
 		{
 			name: "Node.js",
 			logo: "/nodejs.png",
+			url: "https://nodejs.org",
+		},
+		{
+			name: "Flask",
+			logo: "/flask.png",
+			url: "https://flask.palletsprojects.com/en/2.0.x/",
+		},
+		{
+			name: "Express",
+			logo: "/express.png",
+			url: "https://expressjs.com",
 		},
 	],
 	os: [
 		{
 			name: "Linux",
 			logo: "/linux.png",
+			url: "https://linux.org/",
 		},
 		{
 			name: "Windows",
 			logo: "/windows.png",
+			url: "https://www.microsoft.com/en-gb/windows",
+		},
+		{
+			name: "Ubuntu",
+			logo: "/ubuntu.png",
+			url: "https://ubuntu.com",
+		},
+		{
+			name: "Arch Linux",
+			logo: "/arch.png",
+			url: "https://archlinux.org",
 		},
 	],
 	devops: [
 		{
 			name: "Nginx",
 			logo: "/nginx.png",
+			url: "https://nginx.com",
 		},
 		{
 			name: "Git",
 			logo: "/git.png",
+			url: "https://git-scm.com/",
+		},
+		{
+			name: "PM2",
+			logo: "/pm2.png",
+			url: "https://pm2.keymetrics.io/",
 		},
 	],
 };
@@ -81,12 +116,28 @@ class Experience extends React.Component<Props> {
 										<tr className="table-content">
 											{/*@ts-ignore*/}
 											<h3>{translation[key]}</h3>
-											{
-												//@ts-ignore
-												skills[key].map((obj: { name: string; logo: string }) => {
-													return <img src={obj.logo} alt={obj.name} />;
-												})
-											}
+											<table>
+												<tr>
+													{
+														//@ts-ignore
+														skills[key].map(
+															(
+																obj: { name: string; logo: string; url: string },
+																i: number
+															) => {
+																return (
+																	<td className="skill">
+																		<a href={obj.url}>
+																			<img src={obj.logo} alt={obj.name} />
+																			{obj.name}
+																		</a>
+																	</td>
+																);
+															}
+														)
+													}
+												</tr>
+											</table>
 										</tr>
 									</>
 								);

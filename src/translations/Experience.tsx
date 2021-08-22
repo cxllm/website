@@ -54,9 +54,9 @@ const translations = {
 				name: "SquareNode",
 				position: "Admin/Developer",
 				description:
-					"SquareNode is a host that provides game, web and app hosting with reliable hosting and DDoS protection from OVH.",
+					"SquareNode est un hébergeur qui fournit l'hébergement de jeux, de sites web et d'applications avec avec une protection DDoS fiable assuré par OVH.",
 				involved:
-					"Web Development (React, HTML), Backend Development (TypeScript, Python) ",
+					"Development Web (React, HTML), Development Back-end(TypeScript, Python) ",
 				start: "août 2021",
 				end: "aujourd'hui",
 			},
