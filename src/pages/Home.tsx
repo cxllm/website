@@ -10,7 +10,6 @@ class Home extends React.Component<Props> {
 		song: string;
 		url: string;
 		artist: string;
-		age: string;
 	};
 	constructor(props: Props) {
 		super(props);
@@ -18,23 +17,12 @@ class Home extends React.Component<Props> {
 			song: "",
 			url: "",
 			artist: "",
-			age: "",
 		};
-	}
-	age() {
-		fetch("http://localhost:9754/api/age")
-			.then((res) => res.json())
-			.then((res) => {
-				console.log(res);
-				this.setState({ age: res });
-			});
 	}
 	componentDidMount() {
 		this.updateLastFM();
-		this.age();
 		setInterval(() => {
 			this.updateLastFM();
-			this.age();
 		}, 30 * 1000);
 	}
 	updateLastFM() {
@@ -57,9 +45,7 @@ class Home extends React.Component<Props> {
 			<>
 				<h1>Callum - {translation.title}</h1>
 				<Socials />
-				<p className="text">
-					{parse(translation.text.replace("[age]", this.state.age))}
-				</p>
+				<p className="text">{parse(translation.text)}</p>
 				<p className="spotify">
 					{this.state.song ? (
 						<a href={this.state.url}>
