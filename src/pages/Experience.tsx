@@ -162,6 +162,10 @@ class Experience extends React.Component<Props> {
 										<h3>{position.name}</h3>
 										<p>{position.description}</p>
 										<i>
+											{translation.involves} {position.involved}
+										</i>
+										<br />
+										<i>
 											{position.start} - {position.end}
 										</i>
 									</div>

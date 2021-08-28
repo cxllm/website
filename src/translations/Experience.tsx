@@ -7,6 +7,7 @@ const translations = {
 		os: "Operating Systems",
 		skills: "Skills",
 		position: "Positions",
+		involves: "Involves",
 		positions: [
 			{
 				name: "SkyNight Labs",
@@ -37,6 +38,7 @@ const translations = {
 		position: "Positions",
 		skills: "Compétences",
 		devops: "DevOps",
+		involves: "Cela implique",
 		os: "Systèmes d'Exploitation",
 		text: `Sur cette page, vous pouvez trouver mon éxperience dans différents langages et frameworks codage et mes positions sur des orginasations.`,
 		positions: [
@@ -56,7 +58,7 @@ const translations = {
 				description:
 					"SquareNode est un hébergeur qui fournit l'hébergement de jeux, de sites web et d'applications avec avec une protection DDoS fiable assuré par OVH.",
 				involved:
-					"Development Web (React, HTML), Development Back-end(TypeScript, Python) ",
+					"Development Web (React, HTML), Development Back-end (TypeScript, Python)",
 				start: "août 2021",
 				end: "aujourd'hui",
 			},
