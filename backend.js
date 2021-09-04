@@ -24,10 +24,7 @@ setInterval(async () => {
 app.get("/api/last-fm", (_, res) => {
 	return res.json(lastfm);
 });
-/*app.get("/api/age", (_, res) => {
-	const age = Math.floor((Date.now() - new Date(config.dob)) / 31536000000);
-	return res.json(age);
-});*/
+
 app.get("*", (_, res) => {
 	return res.redirect("https://cxllm.xyz/API");
 });
