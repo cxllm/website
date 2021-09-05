@@ -41,18 +41,18 @@ class Navigation extends React.Component<Props> {
                 </Nav.Link>
                 <NavDropdown
                   title={translation.links}
-                  id="collasible-nav-dropdown"
+                  id="collapsible-nav-dropdown"
                 >
-                  <NavDropdown.Item to="https://github.com/cxllm">
+                  <NavDropdown.Item href="https://github.com/cxllm">
                     GitHub
                   </NavDropdown.Item>
-                  <NavDropdown.Item to="https://twitter.com/CX11M">
+                  <NavDropdown.Item href="https://twitter.com/CX11M">
                     Twitter
                   </NavDropdown.Item>
-                  <NavDropdown.Item to="mailto:hello@cxllm.xyz">
+                  <NavDropdown.Item href="mailto:hello@cxllm.xyz">
                     Email
                   </NavDropdown.Item>
-                  <NavDropdown.Item to="https://notes.cxllm.xyz">
+                  <NavDropdown.Item href="https://notes.cxllm.xyz">
                     Blog
                   </NavDropdown.Item>
 
@@ -61,9 +61,7 @@ class Navigation extends React.Component<Props> {
 ="#action/3.4">Separated link</NavDropdown.Item>*/}
                 </NavDropdown>
                 <Nav.Link onClick={() => this.props.setLang()}>
-                  <span
-                    className={`flag-icon flag-icon-${translation.lang}`}
-                  ></span>
+                  <span className={`flag-icon flag-icon-${translation.lang}`} />
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
