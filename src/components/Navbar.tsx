@@ -55,10 +55,6 @@ class Navigation extends React.Component<Props> {
                   <NavDropdown.Item href="https://notes.cxllm.xyz">
                     Blog
                   </NavDropdown.Item>
-
-                  {/*<NavDropdown.Divider />
-								<NavDropdown.Item to
-="#action/3.4">Separated link</NavDropdown.Item>*/}
                 </NavDropdown>
                 <Nav.Link onClick={() => this.props.setLang()}>
                   <span className={`flag-icon flag-icon-${translation.lang}`} />
