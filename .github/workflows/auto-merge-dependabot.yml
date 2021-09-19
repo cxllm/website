@@ -1,13 +1,31 @@
-name: auto-merge
+name: Merge me!
 
 on:
-  pull_request_target:
+    workflow_run:
+        types:
+            - completed
+        workflows:
+            - 'Integrate'
 
 jobs:
-  auto-merge:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
-        with:
-          github-token: ${{ secrets.CALLUM_TOKEN }}
+    merge-me:
+        name: Merge me!
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Merge me!
+              if: ${{ github.event.workflow_run.conclusion == 'success' }}
+              uses: ridedott/merge-me-action@v2
+              with:
+                  # Depending on branch prodtection rules, a  manually populated
+                  # `GITHUB_TOKEN_WORKAROUND` secret with permissions to push to
+                  # a protected branch must be used.
+                  #
+                  # When using a custom token, it is recommended to leave the following
+                  # comment for other developers to be aware of the reasoning behind it:
+                  #
+                  # This must be used as GitHub Actions token does not support pushing
+                  # to protected branches.
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PRESET: DEPENDABOT_MINOR
