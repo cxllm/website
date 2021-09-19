@@ -1,31 +1,35 @@
-name: Merge me!
 
-on:
-    workflow_run:
-        types:
-            - completed
-        workflows:
-            - 'Integrate'
 
-jobs:
-    merge-me:
-        name: Merge me!
-
+    name: Dependabot auto-approve
+    on: pull_request_target
+    
+    permissions:
+      # The documentation has a typo here.
+      # It's `contents`, not `content`.
+      contents: write
+      pull-requests: write
+    
+    jobs:
+      dependabot:
         runs-on: ubuntu-latest
-
+        if: ${{ github.actor == 'dependabot[bot]' }}
         steps:
-            - name: Merge me!
-              if: ${{ github.event.workflow_run.conclusion == 'success' }}
-              uses: ridedott/merge-me-action@v2
-              with:
-                  # Depending on branch prodtection rules, a  manually populated
-                  # `GITHUB_TOKEN_WORKAROUND` secret with permissions to push to
-                  # a protected branch must be used.
-                  #
-                  # When using a custom token, it is recommended to leave the following
-                  # comment for other developers to be aware of the reasoning behind it:
-                  #
-                  # This must be used as GitHub Actions token does not support pushing
-                  # to protected branches.
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  PRESET: DEPENDABOT_PATCH
+          - name: Dependabot metadata
+            id: metadata
+            uses: dependabot/fetch-metadata@v1.1.0
+            with:
+              github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+          - name: Approve a PR
+            run: gh pr review --approve "$PR_URL"
+            env:
+              PR_URL: ${{github.event.pull_request.html_url}}
+              GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+          - name: Enable auto-merge for Dependabot PRs
+            if: ${{contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
+            run: gh pr merge --auto --merge "$PR_URL"
+            env:
+              PR_URL: ${{github.event.pull_request.html_url}}
+              # The documentation incorrectly forgets `GITHUB_TOKEN` here.
+              GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
