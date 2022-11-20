@@ -9,10 +9,10 @@ export default class Projects extends React.Component {
 			{
 				name: "Corynth (Discord Bot)",
 				description:
-					"A multi-purpose discord bot written using Discord.JS and TypeScript that is updated to utilise slash commands",
+					"A multi-purpose discord bot written in TypeScript using Discord.js v13. Brought back in 2022",
 				start: "December 2019",
-				finish: "April 2022",
-				url: "https://github.com/cxllm/corynth",
+				finish: "Present",
+				url: "https://corynth.cxllm.uk",
 				image: "/corynth.png"
 			},
 			{
@@ -50,6 +50,15 @@ export default class Projects extends React.Component {
 				start: "August 2021",
 				finish: "Present",
 				image: "/avatar.jpg"
+			},
+			{
+				name: "Christmas Countdown",
+				description:
+					"A simple website to countdown the days to Christmas (in English and French)",
+				url: "https://noel.cxllm.uk",
+				start: "November 2022",
+				finish: "Present",
+				image: "/christmas.png"
 			}
 		];
 		return (
