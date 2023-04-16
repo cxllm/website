@@ -13,7 +13,7 @@ export default class NotFound extends React.Component {
 						<title>404 - Not Found</title>
 					</Helmet>
 					<span>
-						<img src="/avatar.jpg" width="120px" alt="Avatar" />
+						<img src="/avatar.png" width="120px" alt="Avatar" />
 						<div className="intro">
 							<h1>404 - Not Found</h1>
 							<p>

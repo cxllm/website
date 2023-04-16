@@ -9,10 +9,10 @@ export default class Projects extends React.Component {
 			{
 				name: "Corynth (Discord Bot)",
 				description:
-					"A multi-purpose discord bot written in TypeScript using Discord.js v13. Brought back in 2022",
+					"A multi-purpose discord bot written in TypeScript using Discord.js v13 and slash commands.",
 				start: "December 2019",
-				finish: "Present",
-				url: "https://corynth.cxllm.uk",
+				finish: "April 2023",
+				url: "https://github.com/cxllm/corynth",
 				image: "/corynth.png"
 			},
 			{
@@ -49,7 +49,7 @@ export default class Projects extends React.Component {
 				url: "https://github.com/cxllm/website",
 				start: "August 2021",
 				finish: "Present",
-				image: "/avatar.jpg"
+				image: "/avatar.png"
 			},
 			{
 				name: "Christmas Countdown",
@@ -79,7 +79,7 @@ export default class Projects extends React.Component {
 						/>
 					</Helmet>
 					<span>
-						<img src="/avatar.jpg" width="120px" alt="Avatar" />
+						<img src="/avatar.png" width="120px" alt="Avatar" />
 						<div className="intro">
 							<h1>My Projects</h1>
 							<p>
