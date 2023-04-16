@@ -83,7 +83,7 @@ export default class Home extends React.Component<
                   {this.state.playing
                     ? "Now listening to"
                     : "Last listened to"}{" "}
-                  {this.state.song} by {this.state.artist}
+                  <b>{this.state.song}</b> by <b>{this.state.artist}</b>
                 </a>
               ) : (
                 ""
