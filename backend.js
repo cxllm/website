@@ -1,4 +1,3 @@
-// might implement in the future but not right now
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
@@ -7,8 +6,6 @@ const config = require("./config.json");
 const app = express();
 app.use(cors());
 app.set("views", "./build");
-app.use(express.static("./build"));
-app.engine("html", require("ejs").renderFile);
 let lastfm = {};
 
 async function updateLastFM() {
@@ -32,10 +29,6 @@ setInterval(async () => {
 
 app.get("/api/last-fm", (_, res) => {
   return res.json(lastfm);
-});
-
-app.get("*", (_, res) => {
-  return res.render("index.html");
 });
 
 app.listen(9754, () => {

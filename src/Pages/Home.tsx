@@ -22,36 +22,35 @@ export default class Home extends React.Component<
     };
   }
 
-  /* Last fm stuff, not going to implement for a while
-    componentDidMount() {
+  componentDidMount() {
+    this.updateLastFM();
+    setInterval(() => {
       this.updateLastFM();
-      setInterval(() => {
-        this.updateLastFM();
-      }, 30 * 1000);
-    }
-  
-    updateLastFM() {
-      fetch("/api/last-fm")
-        .then((res) => res.json())
-        .catch((e) =>
-          this.setState({
+    }, 30 * 1000);
+  }
+
+  updateLastFM() {
+    fetch("https://a.cxllm.uk/api/last-fm")
+      .then((res) => res.json())
+      .catch((e) =>
+        this.setState({
+          song: "",
+          artist: "",
+          url: "",
+          playing: false,
+        })
+      )
+      .then((res) => {
+        if (!res)
+          return this.setState({
             song: "",
-            artist: "",
             url: "",
+            artist: "",
             playing: false,
-          })
-        )
-        .then((res) => {
-          if (!res)
-            return this.setState({
-              song: "",
-              url: "",
-              artist: "",
-              playing: false,
-            });
-          this.setState(res);
-        });
-    }*/
+          });
+        this.setState(res);
+      });
+  }
 
   render() {
     return (
