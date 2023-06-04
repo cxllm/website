@@ -76,18 +76,18 @@ export default class Home extends React.Component<
             <div className="intro">
               <h1>Callum (cxllm)</h1>
               <p>Full-Stack TypeScript and Python developer from the UK.</p>
-              <Socials />
-              {this.state.song ? (
+                            {this.state.song ? (
                 <a className="spotify" href={this.state.url}>
                   <i className="fab fa-spotify" />
                   {this.state.playing
                     ? "Now listening to"
                     : "Last listened to"}{" "}
-                  <b>{this.state.song}</b> by <b>{this.state.artist}</b>
+                  {this.state.song} by {this.state.artist}
                 </a>
               ) : (
                 ""
               )}{" "}
+              <Socials />
             </div>
           </span>
         </div>
