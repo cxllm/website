@@ -22,7 +22,7 @@ export default class Projects extends React.Component {
 				start: "September 2021",
 				finish: "Present",
 				url: "https://currency.cxllm.uk",
-				image: "/currency-converter.png"
+				image: "/avatar.png"
 			},
 			{
 				name: "Underground Status CLI",
