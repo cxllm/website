@@ -93,9 +93,6 @@ export default class Projects extends React.Component {
 						{projects.map((project, i) => {
 							return (
 								<div className={i % 2 === 1 ? "edge" : ""}>
-									<div className="image">
-										<img src={project.image} alt="Avatar" />
-									</div>
 									<a href={project.url}>{project.name}</a>
 									<p>{project.description}</p>
 									<p className="time">
