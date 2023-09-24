@@ -2,6 +2,7 @@ import React from "react";
 import albums from "../Albums";
 import Translations from "../Translations/Album";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 class Album extends React.Component<{ lang: "en" | "fr" }> {
 	render() {
@@ -11,11 +12,16 @@ class Album extends React.Component<{ lang: "en" | "fr" }> {
 		if (album) {
 			return (
 				<div className="content text">
+					<Helmet>
+						<title>Callum | {album.name[this.props.lang]} </title>
+					</Helmet>
 					<h1>{album.name[this.props.lang]}</h1>
 					<p>
 						{album.description[this.props.lang]}
 						<br />
-						<a href="/photos">{"<<"} Back to Photos</a>
+						<Link to="/photos">
+							{"<<"} {translations.back}
+						</Link>{" "}
 						<div className="table photo">
 							{album.photos.map((photo, i) => {
 								return (
@@ -32,6 +38,9 @@ class Album extends React.Component<{ lang: "en" | "fr" }> {
 		} else {
 			return (
 				<div className="context text">
+					<Helmet>
+						<title>Callum | {translations.title} </title>
+					</Helmet>
 					<h1>{translations.title}</h1>
 					<p>
 						{translations.notfound.replace("[url]", window.location.pathname)}
