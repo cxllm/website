@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+import Photos from "./Pages/Photos";
+import About from "./Pages/About";
+import NotFound from "./Pages/404";
+
+import Navbar from "./Templates/Navbar";
+import Album from "./Pages/Album";
+
+class App extends React.Component {
+	getLanguage(): "fr" | "en" {
+		//@ts-ignore
+		return localStorage.getItem("lang");
+	}
+	switchLanguage = () => {
+		let lang = localStorage.getItem("lang");
+		if (!lang || lang === "en") {
+			localStorage.setItem("lang", "fr");
+		} else {
+			localStorage.setItem("lang", "en");
+		}
+		window.location.reload();
+	};
+	render() {
+		return (
+			<Router>
+				<div className="App">
+					<Navbar lang={this.getLanguage()} switchLanguage={this.switchLanguage} />
+					<div className="content">
+						<Routes>
+							<Route path="/" element={<Home lang={this.getLanguage()} />} />
+							<Route path="/about-me" element={<About lang={this.getLanguage()} />} />
+							<Route
+								path="/projects"
+								element={<Projects lang={this.getLanguage()} />}
+							/>
+							<Route path="/photos" element={<Photos lang={this.getLanguage()} />} />
+							<Route path="/photos/*" element={<Album lang={this.getLanguage()} />} />
+							<Route path="*" element={<NotFound lang={this.getLanguage()} />} />
+						</Routes>
+					</div>
+				</div>
+			</Router>
+		);
+	}
 }
 
 export default App;

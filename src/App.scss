@@ -1,0 +1,207 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+
+@keyframes slide-in {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+.App {
+	.nav {
+		background-color: #0000;
+	}
+
+	.page {
+		background-color: #ffffff22 !important;
+		border-radius: 10px;
+		transition: fade-in 5s;
+	}
+
+	font-family: "Kanit";
+	background-color: #212121 /*#282c34*/;
+	min-height: 100vh;
+
+	.content {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: 90vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.text {
+			.intro {
+				text-align: right;
+			}
+
+			width: 100%;
+
+			img {
+				float: left;
+				border-radius: 100px;
+				margin: 0 20px 0 0;
+				width: 125px;
+			}
+		}
+
+		.avatar {
+			width: 100px;
+			border-radius: 50px;
+		}
+
+		color: white;
+
+		h1 {
+			margin: 5px 0;
+			font-size: xx-large;
+		}
+
+		p,
+		.spotify a {
+			margin: 5px 0;
+			font-size: large;
+			padding: 0 0;
+		}
+
+		.flag-icon {
+			background-size: cover;
+			width: 20px;
+			height: 15px;
+		}
+
+		.table {
+			padding: 10px 0;
+
+			div {
+				margin: 5px 5px 5px 5px;
+				padding: 10px 10px;
+				border-radius: 10px;
+				background-color: #2a2a2aaa;
+			}
+
+			div.edge {
+				margin-right: 0 !important;
+			}
+
+			a {
+				font-size: large;
+			}
+
+			img {
+				object-fit: cover;
+			}
+
+			display: grid;
+			color: white;
+			grid-template-columns: 1fr 1fr; /* fraction*/
+			div.image {
+				width: 150px;
+				background-color: #00000000;
+				padding: 0;
+				margin: 0;
+
+				img {
+					height: 150px;
+				}
+			}
+		}
+
+		.photo {
+			grid-template-columns: 1fr 1fr 1fr; /* fraction*/
+
+			img {
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				border-radius: 5px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1000px) {
+		.content {
+			width: 100%;
+
+			.text {
+				padding: 0 10px;
+
+				p,
+				a {
+					font-size: 15px;
+				}
+
+				h1 {
+					font-size: 25px;
+				}
+			}
+
+			img {
+				margin: 0 5px 0 0;
+			}
+
+			.table {
+				grid-template-columns: 1fr; /* fraction*/
+				div.image {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+a,
+button {
+	color: #00aaff;
+	border: none;
+	background-color: transparent;
+	width: fit-content;
+	padding-left: 0;
+	text-decoration: none;
+}
+
+p a {
+	padding: 0 !important;
+}
+
+button {
+	padding: 10px 0;
+}
+
+.spotify {
+	color: #51e485 !important;
+	opacity: 0.8;
+	width: 100%;
+	text-decoration: none;
+	font-size: large;
+	margin: 5px 0;
+	i {
+		padding-right: 5px;
+	}
+}
+
+.header {
+	opacity: 1 !important;
+	font-size: large;
+}
+
+.socials {
+	margin: 5px 0px;
+	a {
+		color: white;
+		font-size: 20px;
+		padding: 0px 0px 0px 30px;
+		opacity: 0.9;
+	}
+}
+
+.App-link {
+	color: #61dafb;
+}
