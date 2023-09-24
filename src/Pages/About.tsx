@@ -22,7 +22,7 @@ class About extends React.Component<{ lang: "en" | "fr" }> {
 								<div>
 									<h1>{section.title}</h1>
 									<p>
-										{section.description.replace("\n", `${(<br />)}`)}
+										{section.description}
 										{section.subjects?.map((subject) => (
 											<>
 												<br />

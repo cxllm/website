@@ -6,7 +6,7 @@ const translations = {
 			{
 				title: "Mes Études",
 				description:
-					"Je suis en train d'étudier pour les examens (A-Levels) et je prends:<br />",
+					"Je suis en train d'étudier pour les examens (A-Levels) et je prends:",
 				subjects: ["Les Maths", "L'Informatique", "Le Français", "L'Économie"]
 			}
 		]
