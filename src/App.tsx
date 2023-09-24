@@ -13,6 +13,11 @@ import Album from "./Pages/Album";
 
 class App extends React.Component {
 	getLanguage(): "fr" | "en" {
+		let lang = localStorage.getItem("lang");
+		if (!lang) {
+			lang = "en";
+			localStorage.setItem("lang", "en");
+		}
 		//@ts-ignore
 		return localStorage.getItem("lang");
 	}
