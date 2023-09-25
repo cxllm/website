@@ -27,7 +27,7 @@ const info = {
 		{
 			image: "Fethiye.jpg",
 			description: {
-				fr: "Plage de Çalış Fethiye, Turquie",
+				fr: "Plage de Çalış, Fethiye, Turquie",
 				en: "Çalış Beach, Fethiye, Türkiye"
 			}
 		},
