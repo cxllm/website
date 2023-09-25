@@ -107,7 +107,7 @@
 			grid-template-columns: 1fr 1fr; /* fraction*/
 			div.image {
 				width: 150px;
-				background-color: #00000000;
+				background-color: #0000;
 				padding: 0;
 				margin: 0;
 
@@ -123,6 +123,7 @@
 				padding: 0;
 				margin: 0;
 			}
+			background-color: #0000;
 		}
 		.photo {
 			//grid-template-columns: 1fr 1fr 1fr; /* fraction*/
