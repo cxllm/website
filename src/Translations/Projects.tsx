@@ -60,7 +60,8 @@ const translations = {
 		projects: [
 			{
 				name: "Corynth",
-				description: "A discord bot that I made Discord.js v13 and TypeScript",
+				description:
+					"A discord bot that I made using Discord.js v13 and TypeScript",
 				start: "December 2019",
 				end: "April 2023",
 				url: "https://github.com/cxllm/corynth"

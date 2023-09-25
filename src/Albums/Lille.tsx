@@ -2,11 +2,11 @@ const info = {
 	url: "lille",
 	cover: "Rue%20Paul%20Duez.jpg",
 	fr: {
-		name: "Photos de Lille par nuit",
+		name: "Avril 2023 - Photos de Lille par nuit",
 		description: "Les photos que j'avais pris par nuit quand j'étais à Lille."
 	},
 	en: {
-		name: "Photos of Lille by night",
+		name: "April 2023 - Photos of Lille by night",
 		description: "Photos I took at night while I was in Lille"
 	},
 	photos: [
