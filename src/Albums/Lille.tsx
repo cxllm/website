@@ -46,7 +46,7 @@ const info = {
 			}
 		},
 		{
-			image: "Tableau%20Des%20Departs.jpg",
+			image: "Tableau%20des%20Departs.jpg",
 			description: {
 				fr: "Tableau des Départs Gare de Lille Flandres",
 				en: "Lille Flanders Station Departure Board"
