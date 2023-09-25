@@ -84,7 +84,7 @@
 				font-style: italic;
 			}
 			div {
-				margin: 5px 5px 5px 5px;
+				margin: 5px 5px;
 				padding: 10px 10px;
 				border-radius: 10px;
 				background-color: #2a2a2aaa;
@@ -116,7 +116,14 @@
 				}
 			}
 		}
-
+		.subject {
+			padding: 0;
+			margin: 0;
+			div {
+				padding: 0;
+				margin: 0;
+			}
+		}
 		.photo {
 			//grid-template-columns: 1fr 1fr 1fr; /* fraction*/
 			align-items: center;
@@ -130,6 +137,14 @@
 		.photo.albums {
 			grid-template-columns: 1fr 1fr 1fr; /* fraction*/
 		}
+	}
+	td {
+		padding: 0 20px 0 0;
+		font-size: 20px;
+		border: none;
+	}
+	tr {
+		border: none;
 	}
 
 	@media screen and (max-width: 1000px) {
@@ -207,7 +222,6 @@ button {
 		opacity: 0.9;
 	}
 }
-
 .App-link {
 	color: #61dafb;
 }

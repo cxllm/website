@@ -2,12 +2,12 @@ const info = {
 	url: "sunset",
 	cover: "Motorway.jpg",
 	fr: {
-		name: "Photos de Coucher de Soleil",
+		name: "Couchers de Soleil",
 		description: "Une colléction de mes photos de coucher de soleil."
 	},
 	en: {
-		name: "Sunset Photos",
-		description: "A collection of my favourite sunset pictures I've taken"
+		name: "Sunsets",
+		description: "Some sunset pictures I have taken"
 	},
 	photos: [
 		{
@@ -20,7 +20,7 @@ const info = {
 		{
 			image: "Field.jpg",
 			description: {
-				fr: "Un couche de soleil des les champs",
+				fr: "Un coucher de soleil dans les champs",
 				en: "Sunset in the fields"
 			}
 		},
@@ -41,7 +41,7 @@ const info = {
 		{
 			image: "Motorway.jpg",
 			description: {
-				fr: "Couche de Soleil sur un autoroute vide",
+				fr: "Coucher de Soleil sur un autoroute vide",
 				en: "Sunset on an empty motorway"
 			}
 		},
