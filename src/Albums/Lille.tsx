@@ -7,7 +7,7 @@ const info = {
 	},
 	en: {
 		name: "April 2023 - Lille by Night",
-		description: "Photos I took at night while I was in Lille"
+		description: "Pictures of Lille at night"
 	},
 	photos: [
 		{
