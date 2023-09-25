@@ -1,6 +1,7 @@
 import React from "react";
 import Translations from "../Translations/Projects";
 import { Helmet } from "react-helmet";
+import Socials from "../Templates/Socials";
 
 class Projects extends React.Component<{ lang: "en" | "fr" }> {
 	render() {
@@ -15,6 +16,7 @@ class Projects extends React.Component<{ lang: "en" | "fr" }> {
 					<div className="intro">
 						<h1>{translations.title}</h1>
 						<p>{translations.description}</p>
+						<Socials />
 					</div>
 				</span>
 				<table className="table">

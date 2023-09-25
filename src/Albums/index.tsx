@@ -1,3 +1,4 @@
 import Lille from "./Lille";
-let albums = [Lille];
+import Sunsets from "./Sunsets";
+let albums = [Lille, Sunsets];
 export default albums;

@@ -10,23 +10,28 @@ class Album extends React.Component<{ lang: "en" | "fr" }> {
 		let pathname = window.location.pathname.split("/")[2];
 		let album = albums.find((value) => value.url === pathname);
 		if (album) {
+			let info = album[this.props.lang];
 			return (
 				<div className="content text">
 					<Helmet>
-						<title>Callum | {album.name[this.props.lang]} </title>
+						<title>Callum | {info.name} </title>
 					</Helmet>
-					<h1>{album.name[this.props.lang]}</h1>
+					<h1>{info.name}</h1>
 					<p>
-						{album.description[this.props.lang]}
+						{info.description}
 						<br />
 						<Link to="/photos">
 							{"<<"} {translations.back}
 						</Link>{" "}
 						<div className="table photo">
-							{album.photos.map((photo, i) => {
+							{album.photos.map((photo) => {
 								return (
 									<div>
-										<img src={photo.image} alt={photo.description[this.props.lang]} />
+										<img
+											/*@ts-ignore*/
+											src={"/photo/" + album.url + "/" + photo.image}
+											alt={photo.description[this.props.lang]}
+										/>
 										<p>{photo.description[this.props.lang]}</p>
 									</div>
 								);

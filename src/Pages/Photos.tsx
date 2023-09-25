@@ -21,15 +21,19 @@ class Photos extends React.Component<{ lang: "en" | "fr" }> {
 						<Socials />
 					</div>
 				</span>
-				<table className="table photo">
+				<table className="table photo albums">
 					{albums.map((album) => {
+						let info = album[this.props.lang];
 						return (
 							<div>
-								<img src={album.cover} alt="Album cover" />
+								<img
+									src={"/photo/" + album.url + "/" + album.cover}
+									alt="Album cover"
+								/>
 								<p>
-									<Link to={"/photos/" + album.url}>{album.name[this.props.lang]}</Link>
+									<Link to={"/photos/" + album.url}>{info.name}</Link>
 									<br />
-									{album.description[this.props.lang]}
+									{info.description}
 								</p>
 							</div>
 						);
