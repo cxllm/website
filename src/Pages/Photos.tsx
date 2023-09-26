@@ -26,10 +26,12 @@ class Photos extends React.Component<{ lang: "en" | "fr" }> {
 						let info = album[this.props.lang];
 						return (
 							<div>
-								<img
-									src={"/photo/" + album.url + "/" + album.cover}
-									alt="Album cover"
-								/>
+								<Link to={"/photos/" + album.url}>
+									<img
+										src={"/photo/" + album.url + "/" + album.cover}
+										alt="Album cover"
+									/>
+								</Link>
 								<p>
 									<Link to={"/photos/" + album.url}>{info.name}</Link>
 									<br />
