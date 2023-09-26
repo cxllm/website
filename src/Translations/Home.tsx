@@ -3,7 +3,7 @@ const translations = {
 		phrases: [
 			"Lycéen",
 			1000,
-			"Programmeur de TypeScript et Python",
+			"Programmeur",
 			1000,
 			"Nageur",
 			1000,
@@ -17,7 +17,7 @@ const translations = {
 		phrases: [
 			"Sixth Former",
 			1000,
-			"Python and TypeScript developer",
+			"Developer",
 			1000,
 			"Swimmer",
 			1000,
