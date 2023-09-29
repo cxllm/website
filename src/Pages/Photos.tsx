@@ -11,12 +11,12 @@ class Photos extends React.Component<{ lang: "en" | "fr" }> {
 		return (
 			<div className="content text">
 				<Helmet>
-					<title>Callum | Photos</title>
+					<title>Callum | {translations.title}</title>
 				</Helmet>
 				<span>
 					<img src="/avatar.png" width="120px" alt="Avatar" />
 					<div className="intro">
-						<h1>Photos</h1>
+						<h1>{translations.title}</h1>
 						<p>{translations.description}</p>
 						<Socials />
 					</div>

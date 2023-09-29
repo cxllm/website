@@ -173,8 +173,9 @@
 				margin: 0 5px 0 0;
 			}
 
-			.table {
-				grid-template-columns: 1fr; /* fraction*/
+			.table,
+			.table.photos.albums {
+				grid-template-columns: 1fr !important; /* fraction*/
 				div.image {
 					display: flex;
 				}

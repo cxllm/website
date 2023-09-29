@@ -69,7 +69,7 @@ const translations = {
 			{
 				name: "My Personal Site",
 				description:
-					"Over the past few years, I have continuously made and remade my website which I view to be my personal portfolio",
+					"Over the past few years, I have continuously made and remade my website which is one of my longest running projects",
 				start: "September 2021",
 				end: "Present",
 				url: "https://github.com/cxllm/website"
