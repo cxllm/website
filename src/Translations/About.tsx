@@ -10,7 +10,7 @@ const translations = {
 		studies: {
 			title: "Mes Études",
 			info: "Je suis en train d'étudier pour les examens (A-Levels) et je prends:",
-			subjects: ["Les Maths", "L'Informatique", "Le Français", "L'Économie"]
+			subjects: ["Double Maths", "L'Informatique", "Le Français"]
 		},
 		programming: {
 			title: "Compètences de la Programmation",
@@ -34,7 +34,7 @@ const translations = {
 		studies: {
 			title: "My Studies",
 			info: "I am currently studying A-Levels and I take:",
-			subjects: ["Maths", "Computer Science", "French", "Economics"]
+			subjects: ["Double Maths", "Computer Science", "French"]
 		},
 		programming: {
 			title: "Programming Skills",
