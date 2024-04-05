@@ -12,10 +12,24 @@ const info: Album = {
 	},
 	photos: [
 		{
-			image: "Bruges.jpg",
+			image: "Ramsgate1.jpg",
 			description: {
-				fr: "Parc Minnewater, Bruges, Belgique",
-				en: "Minnewater Park, Bruges, Belgium"
+				fr: "Ramsgate Plage 1, Kent, Royaume-Uni",
+				en: "Ramsgate Beach 1, Kent, England"
+			}
+		},
+		{
+			image: "Ramsgate2.jpg",
+			description: {
+				fr: "Ramsgate Plage 2, Kent, Royaume-Uni",
+				en: "Ramsgate Beach 2, Kent, England"
+			}
+		},
+		{
+			image: "Motorway.jpg",
+			description: {
+				fr: "Coucher de Soleil sur un autoroute vide",
+				en: "Sunset on an empty motorway"
 			}
 		},
 		{
@@ -40,10 +54,10 @@ const info: Album = {
 			}
 		},
 		{
-			image: "Motorway.jpg",
+			image: "Bruges.jpg",
 			description: {
-				fr: "Coucher de Soleil sur un autoroute vide",
-				en: "Sunset on an empty motorway"
+				fr: "Parc Minnewater, Bruges, Belgique",
+				en: "Minnewater Park, Bruges, Belgium"
 			}
 		},
 		{
@@ -51,20 +65,6 @@ const info: Album = {
 			description: {
 				fr: "Un jour de pluie par la fênetre",
 				en: "Rainy day through the window"
-			}
-		},
-		{
-			image: "Ramsgate1.jpg",
-			description: {
-				fr: "Ramsgate Plage 1, Kent, Royaume-Uni",
-				en: "Ramsgate Beach 1, Kent, England"
-			}
-		},
-		{
-			image: "Ramsgate2.jpg",
-			description: {
-				fr: "Ramsgate Plage 2, Kent, Royaume-Uni",
-				en: "Ramsgate Beach 2, Kent, England"
 			}
 		}
 	]
