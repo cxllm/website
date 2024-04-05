@@ -7,7 +7,7 @@ const info: Album = {
 		description: "Les meilleures photos de mon voyage à Rouen"
 	},
 	en: {
-		name: "Decembre 2023 - Trip to Rouen",
+		name: "December 2023 - Trip to Rouen",
 		description: "The best photos I took in Rouen"
 	},
 	photos: [
