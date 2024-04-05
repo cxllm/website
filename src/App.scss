@@ -162,13 +162,13 @@
 		td {
 			font-size: 15px;
 		}
-		.footer {
+		.footer .no-mobile {
 			display: none;
 			height: 0;
 		}
 		.content {
-			width: 100%;
-
+			width: 98%;
+			min-height: 85vh;
 			.text {
 				padding: 0 10px;
 

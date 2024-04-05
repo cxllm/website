@@ -14,6 +14,7 @@ export default class Footer extends React.Component<{
 					collapseOnSelect
 					expand="lg"
 					variant="dark"
+					expanded={true}
 					style={{
 						fontFamily: "inherit",
 						backgroundColor: "transparent",
@@ -21,14 +22,13 @@ export default class Footer extends React.Component<{
 						padding: "10px 20px"
 					}}
 				>
-					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="me-auto">
 							<Navbar.Text>
 								<Time lang={this.props.lang} />
 							</Navbar.Text>
 						</Nav>
-						<Nav>
+						<Nav className="no-mobile">
 							<Navbar.Text>
 								<Socials />
 							</Navbar.Text>
