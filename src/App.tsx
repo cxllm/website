@@ -10,13 +10,18 @@ import NotFound from "./Pages/404";
 
 import Navbar from "./Templates/Navbar";
 import Album from "./Pages/Album";
+import Footer from "./Templates/Footer";
 
 class App extends React.Component {
 	getLanguage(): "fr" | "en" {
 		let lang = localStorage.getItem("lang");
 		if (!lang) {
-			lang = "en";
-			localStorage.setItem("lang", "en");
+			if (navigator.language.startsWith("fr")) {
+				lang = "fr";
+			} else {
+				lang = "en";
+			}
+			localStorage.setItem("lang", lang);
 		}
 		//@ts-ignore
 		return localStorage.getItem("lang");
@@ -48,6 +53,7 @@ class App extends React.Component {
 							<Route path="*" element={<NotFound lang={this.getLanguage()} />} />
 						</Routes>
 					</div>
+					<Footer lang={this.getLanguage()} />
 				</div>
 			</Router>
 		);

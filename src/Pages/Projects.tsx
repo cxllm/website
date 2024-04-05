@@ -23,7 +23,9 @@ class Projects extends React.Component<{ lang: "en" | "fr" }> {
 					{translations.projects.map((project, i) => {
 						return (
 							<div className={i % 2 === 1 ? "edge" : ""}>
-								<a href={project.url}>{project.name}</a>
+								<a href={project.url} style={{ fontSize: "22px" }}>
+									{project.name}
+								</a>
 								<p>{project.description}</p>
 								<p className="time">
 									{project.start} - {project.end}

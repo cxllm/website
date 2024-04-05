@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 class About extends React.Component<{ lang: "en" | "fr" }> {
 	render() {
 		const translations = Translations[this.props.lang];
-		let { studies, programming, about, photography } = translations;
+		let { studies, programming, languages, photography } = translations;
 		return (
 			<div className="content text">
 				<Helmet>
@@ -21,10 +21,6 @@ class About extends React.Component<{ lang: "en" | "fr" }> {
 						<Socials />
 					</div>
 					<table className="table">
-						<div>
-							<h2>{about.title}</h2>
-							<p>{about.info}</p>
-						</div>
 						<div>
 							<h2>{studies.title}</h2>
 							<p>
@@ -41,7 +37,9 @@ class About extends React.Component<{ lang: "en" | "fr" }> {
 
 						<div>
 							<h2>{programming.title}</h2>
-							<p>{programming.info}</p>
+							<p>
+								{programming.info} <Link to="/projects">{photography.here}</Link>
+							</p>
 							<table>
 								<tr>
 									<td>
@@ -72,6 +70,10 @@ class About extends React.Component<{ lang: "en" | "fr" }> {
 							<p>
 								{photography.info} <Link to="/photos">{photography.here}</Link>
 							</p>
+						</div>
+						<div>
+							<h2>{languages.title}</h2>
+							<p>{languages.info}</p>
 						</div>
 					</table>
 				</span>

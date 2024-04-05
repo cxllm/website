@@ -1,11 +1,10 @@
 const translations = {
 	fr: {
+		title: "Page d'Accueil",
 		phrases: [
 			"Lycéen",
 			1000,
 			"Programmeur",
-			1000,
-			"Nageur",
 			1000,
 			"Étudiant de l'informatique",
 			1000,
@@ -14,12 +13,11 @@ const translations = {
 		]
 	},
 	en: {
+		title: "Home",
 		phrases: [
 			"Sixth Former",
 			1000,
 			"Developer",
-			1000,
-			"Swimmer",
 			1000,
 			"Computer Science student",
 			1000,

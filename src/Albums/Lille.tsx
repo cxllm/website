@@ -1,9 +1,10 @@
-const info = {
+import { Album } from "./index";
+const info: Album = {
 	url: "lille",
 	cover: "Rue%20Paul%20Duez.jpg",
 	fr: {
 		name: "Avril 2023 - Lille par Nuit",
-		description: "Les photos que j'avais pris par nuit quand j'étais à Lille."
+		description: "Les photos que j'avais pris par nuit à Lille."
 	},
 	en: {
 		name: "April 2023 - Lille by Night",

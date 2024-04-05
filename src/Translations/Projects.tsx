@@ -22,10 +22,10 @@ const translations = {
 			{
 				name: "Conversion de Devises",
 				description:
-					"Un site web (en anglais) pour trouver les taux de change pour les devises de votre choix",
+					"Un site web (en anglais) pour trouver les taux de change pour les devises de votre choix. Le site web ne marche plus.",
 				start: "Septembre 2021",
-				end: "Aujourd'hui",
-				url: "https://currency.cxllm.uk"
+				end: "Avril 2024",
+				url: "https://github.com/cxllm/currency-converter"
 			},
 
 			{
@@ -42,7 +42,7 @@ const translations = {
 					"Un site web (en anglais) avec le statut et les problèmes sur le réseau de transport pour Londres (TfL)",
 				start: "Mai 2022",
 				end: "Aujourd'hui",
-				url: "https://tfl.cxllm.uk"
+				url: "https://github.com/cxllm/tfl-status-api"
 			},
 			{
 				name: "Comptage de Noël",
@@ -50,7 +50,15 @@ const translations = {
 					"Un site web qui vous montre combien de temps jusqu'à Noël. Disponible en français et anglais.",
 				start: "Novembre 2022",
 				end: "Aujourd'hui",
-				url: "https://noel.cxllm.uk"
+				url: "https://github.com/cxllm/christmas-countdown"
+			},
+			{
+				name: "Mastermind en Ligne",
+				description:
+					"Une version en ligne (en anglais) du jeu de société «Mastermind» que j'ai crée comme partie de mes cours d'informatique",
+				start: "Decembre 2023",
+				end: "Aujourd'hui",
+				url: "https://github.com/cxllm/mastermind"
 			}
 		]
 	},
@@ -77,10 +85,10 @@ const translations = {
 			{
 				name: "Currency Exchange",
 				description:
-					"A website to find out exchange rates of your choice of currencies.",
+					"A website to find out exchange rates of your choice of currencies. This site no longer works.",
 				start: "September 2021",
 				end: "Present",
-				url: "https://currency.cxllm.uk"
+				url: "https://github.com/cxllm/currency-converter"
 			},
 			{
 				name: "London Undeground Status CLI",
@@ -96,7 +104,7 @@ const translations = {
 					"A website that shows you the current status of the London Undergound",
 				start: "May 2022",
 				end: "Present",
-				url: "https://tfl.cxllm.uk"
+				url: "https://github.com/cxllm/tfl-status-api"
 			},
 
 			{
@@ -105,7 +113,15 @@ const translations = {
 					"A website which shows you how long is left until Christmas. Available in French and English",
 				start: "November 2022",
 				end: "Present",
-				url: "https://christmas.cxllm.uk"
+				url: "https://github.com/cxllm/christmas-countdown"
+			},
+			{
+				name: "Mastermind Online",
+				description:
+					"A single page website version of the board game 'Mastermind' created as part of my Computer Science course",
+				start: "December 2023",
+				end: "Present",
+				url: "https://github.com/cxllm/mastermind"
 			}
 		]
 	}

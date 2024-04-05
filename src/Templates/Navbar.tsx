@@ -27,11 +27,12 @@ export default class Navigation extends React.Component<
 					expand="lg"
 					variant="dark"
 					style={{
-						fontFamily: "Kanit",
+						fontFamily: "inherit",
 						backgroundColor: "transparent",
 						animation: "none",
 						padding: "10px 20px"
 					}}
+					className="nav"
 				>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">

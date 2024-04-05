@@ -1,6 +1,7 @@
-const info = {
+import { Album } from "./index";
+const info: Album = {
 	url: "sunset",
-	cover: "Motorway.jpg",
+	cover: "Ramsgate1.jpg",
 	fr: {
 		name: "Couchers de Soleil",
 		description: "Une colléction de mes photos de coucher de soleil."
@@ -50,6 +51,20 @@ const info = {
 			description: {
 				fr: "Un jour de pluie par la fênetre",
 				en: "Rainy day through the window"
+			}
+		},
+		{
+			image: "Ramsgate1.jpg",
+			description: {
+				fr: "Ramsgate Plage 1, Kent, Royaume-Uni",
+				en: "Ramsgate Beach 1, Kent, England"
+			}
+		},
+		{
+			image: "Ramsgate2.jpg",
+			description: {
+				fr: "Ramsgate Plage 2, Kent, Royaume-Uni",
+				en: "Ramsgate Beach 2, Kent, England"
 			}
 		}
 	]

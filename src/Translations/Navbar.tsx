@@ -1,7 +1,7 @@
 const translations = {
 	fr: {
-		home: "Page d'Accuiel",
-		about: "À Propos de Moi",
+		home: "Page d'Accueil",
+		about: "Propos de Moi",
 		projects: "Projets",
 		photos: "Photos",
 		language: "English"
