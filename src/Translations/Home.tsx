@@ -19,7 +19,7 @@ const translations = {
 			1000,
 			"Developer",
 			1000,
-			"Computer Science student and aspiring beta male",
+			"Computer Science student",
 			1000,
 			"Photographer",
 			1000
