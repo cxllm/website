@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { getLanguage, setLanguage } from "../util/language";
 import translations from "../translations/Navbar.json";
 import { Link } from "react-router";
+import { email } from "../config.json";
 
 export default function Navigation() {
 	const language = getLanguage();
@@ -24,7 +25,7 @@ export default function Navigation() {
 					</Nav.Link>
 				</Nav>
 				<Nav>
-					<Nav.Link href="mailto:hello@cxllm.uk">Email</Nav.Link>
+					<Nav.Link href={`mailto:${email}`}>Email</Nav.Link>
 					<Nav.Link href="https://github.com/cxllm">GitHub</Nav.Link>
 					<Nav.Link onClick={() => setLanguage()}>
 						{language == "en" ? "Français" : "English"}

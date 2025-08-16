@@ -1,3 +1,4 @@
+import { email } from "../config.json";
 export default function Socials() {
 	return (
 		<div className="socials">
@@ -7,7 +8,7 @@ export default function Socials() {
 			<a href="https://discord.com/users/536949735299219467">
 				<i className="fab fa-discord" />
 			</a>
-			<a href="mailto:hello@cxllm.uk" className="back">
+			<a href={`mailto:${email}`} className="back">
 				<i className="fa fa-envelope" />
 			</a>
 		</div>
