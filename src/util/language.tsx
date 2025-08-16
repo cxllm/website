@@ -9,7 +9,6 @@ export function getLanguage(): "en" | "fr" {
 			lang = "en";
 		}
 	}
-	console.log(lang);
 	if (lang == "fr") return "fr";
 	else return "en";
 }
