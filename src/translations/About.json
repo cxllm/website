@@ -1,0 +1,85 @@
+{
+	"en": {
+		"title": "About Me",
+		"sections": {
+			"whoiam": {
+				"title": "Who am I?",
+				"text": "I am a [age]-year-old student and developer from the UK with a strong passion for technology and innovation. I started programming at 12, and it quickly became one of my main interests and creative outlets. Beyond coding, I am enthusiastic about languages and photography.",
+				"text2": "I enjoy collaborating on projects, learning new skills, and sharing knowledge with others. My goal is to create impactful solutions and continuously grow as both a developer and a person."
+			},
+			"education": {
+				"title": "Education",
+				"uni": {
+					"title": "University",
+					"text": "I am currently a first-year Computer Science BSc student at the University of Bath."
+				},
+				"sf": {
+					"title": "Sixth Form",
+					"text": "For my A-Levels, I studied Maths, Further Maths, Computer Science, and French, and also completed an EPQ. My results:"
+				}
+			},
+			"ts": {
+				"title": "Technical Skills",
+				"text": "I have hands-on experience building both frontend and backend applications, with a focus on clean, maintainable code and modern development practices. My skillset covers a range of languages, frameworks, and tools commonly used in web development.",
+				"titles": {
+					"languages": "Languages",
+					"fal": "Frameworks & Libraries",
+					"db": "Databases",
+					"ott": "Other Tools & Technologies"
+				},
+				"bottom": "I am always eager to learn new technologies and best practices to improve my workflow and deliver robust solutions."
+			},
+			"languages": {
+				"title": "Languages",
+				"text": "I am a native English speaker and have been studying French both in school and independently for several years. My proficiency in French is approximately at the B1-B2 level.",
+				"text2": "I am also interested in learning other languages and enjoy exploring different cultures through language study.",
+				"english": "English",
+				"native": "Native",
+				"french": "French",
+				"intermediate": "Intermediate"
+			}
+		}
+	},
+	"fr": {
+		"title": "À Propos de Moi",
+		"sections": {
+			"whoiam": {
+				"title": "Qui suis-je?",
+				"text": "Je suis un étudiant et développeur britannique de [age] ans, passionné par la technologie et l'innovation. J'ai commencé la programmation à 12 ans, et c'est rapidement devenu l'un de mes prinicpaux centres d'intérêt et de mes source de créativité. Au-delà de ça, je suis passioné aussi par les langues et la photographie.",
+				"text2": "J'aime collaborer sur des projets, acquérir de nouvelles compétences et partager mes connaissances. Mon objectif est de créer des solutions efficaces et de progresser continuellement, tant en tant que développeur qu'en tant qu'individu."
+			},
+
+			"education": {
+				"title": "Éducation",
+				"uni": {
+					"title": "Université",
+					"text": "Je suis actuellement étudiant en première année de licence en informatique à l'Université de Bath"
+				},
+				"sf": {
+					"title": "Lycée",
+					"text": "Pour mon A-Level (équivalent britannique du bac), j'ai étudié les maths, les maths supplémentaires, l'informatique et le français, et j'ai également fait un EPQ (Qualification de Projet Étendu). Mes notes:"
+				}
+			},
+			"ts": {
+				"title": "Compétences Techniques",
+				"text": "J'ai une expérience pratique de la création d'applications front-end et back-end, en mettant l'accent sur un code propre et maintenable, ainsi que sur des pratique de développement modernes. Mes compétences couvrent un large éventail de langages, frameworks et outils couramment utilisés en développement web.",
+				"titles": {
+					"languages": "Langages",
+					"fal": "Frameworks & Logithèques",
+					"db": "Bases de Données",
+					"ott": "Autres Outils & Technologies"
+				},
+				"bottom": "Je veux toujours apprendre de nouvelles technologies et de meilleures pratiques pour améliorer mon flux de travail et fournir des solutions robustes."
+			},
+			"languages": {
+				"title": "Langues",
+				"text": "Je suis anglophone et j'étudie le français à l'école et en privé depuis plusieurs années. Mon niveau de français est environ B1 ou B2.",
+				"text2": "Je suis également intéressé par l'apprentissage d'autres langues et j'aime explorer différentes cultures à travers l'étude des langues.",
+				"english": "Anglais",
+				"native": "Langue Maternelle",
+				"french": "Français",
+				"intermediate": "Intermédiaire"
+			}
+		}
+	}
+}

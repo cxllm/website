@@ -1,0 +1,98 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+:root {
+	--accent: #51a2ff;
+}
+div.justify {
+	width: 100%;
+	text-align: justify;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 84vh;
+	padding: 0;
+	height: fit-content;
+	@media screen and (max-width: 1000px) {
+		padding: 0 1em;
+	}
+	.intro {
+		height: 25em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		img.logo {
+			margin: auto;
+			width: 10em;
+			border-radius: 5em;
+			padding-bottom: 0.5em;
+		}
+	}
+}
+hr {
+	color: var(--accent);
+	border: 0.0625em solid var(--accent);
+	width: 100%;
+	opacity: 0.75;
+}
+a {
+	color: var(--accent);
+}
+
+.socials {
+	margin: 0;
+	a {
+		padding: 0 0.5em;
+		font-size: 1.5em;
+	}
+	a.back {
+		padding-right: 0;
+	}
+	a.front {
+		padding-left: 0;
+	}
+}
+
+.navigation {
+	min-height: calc(8vh - 1em - 0.0625em);
+	height: fit-content;
+	padding: 0;
+	background-color: inherit;
+	border-bottom: 0.0625em solid var(--accent);
+	margin-bottom: 1em;
+	a,
+	a:active {
+		color: white;
+	}
+	a:hover {
+		color: var(--accent);
+	}
+	img.logo {
+		width: 2em;
+		border-radius: 1em;
+	}
+	@media screen and (max-width: 1000px) {
+		padding: 0 1em;
+	}
+}
+
+.footer {
+	height: calc(8vh - 1em - 0.0625em);
+	padding: 0;
+	background-color: inherit;
+	border-top: 0.0625em solid var(--accent);
+	margin-bottom: 1em;
+	img.logo {
+		width: 2em;
+		border-radius: 1em;
+	}
+	a:hover {
+		color: var(--accent);
+	}
+	@media screen and (max-width: 1000px) {
+		padding: 0 1em;
+	}
+}

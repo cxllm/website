@@ -1,0 +1,14 @@
+{
+	"en": {
+		"intro": "British computer science student and developer.",
+		"aboutme": "About Me",
+		"projects": "My Projects",
+		"source": "Source Code"
+	},
+	"fr": {
+		"intro": "Étudiant en informatique et developpeur britannique",
+		"aboutme": "À Propos de Moi",
+		"projects": "Mes Projets",
+		"source": "Code Source"
+	}
+}

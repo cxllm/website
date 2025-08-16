@@ -1,0 +1,12 @@
+{
+	"en": {
+		"title": "Page Not Found",
+		"text": "The page that you requested could not be found.",
+		"back": "Go back home"
+	},
+	"fr": {
+		"title": "Page Non Trouvée",
+		"text": "On n'a pas pu trouver la page que vous avez demandée.",
+		"back": "Retour à la page d'accueil"
+	}
+}

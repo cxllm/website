@@ -1,0 +1,53 @@
+{
+	"en": {
+		"title": "My Projects",
+		"projects": [
+			{
+				"name": "This Website",
+				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript."
+			},
+			{
+				"name": "BoltPass",
+				"description": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP)."
+			},
+			{
+				"name": "API d'État de TFL",
+				"description": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London."
+			},
+			{
+				"name": "Mastermind Online",
+				"description": "A single page website version of the classic board game 'Mastermind' created as part of my Computer Science course. It features varying levels of difficulty and a comprehensive set of rules to help users understand the mechanisms of the game."
+			},
+			{
+				"name": "Corynth",
+				"description": "A multi-purpose discord bot made using TypeScript with Discord.js v13. It provided server moderation and configuration, detailed user information, music services and more. It was retired after the running costs became too high to justify"
+			}
+		]
+	},
+	"fr": {
+		"title": "Mes Projets",
+		"projects": [
+			{
+				"name": "Ce site web",
+				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript."
+			},
+
+			{
+				"name": "BoltPass",
+				"description": "BoltPass est mon projet NEA (Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP."
+			},
+			{
+				"name": "API d'État de TFL",
+				"description": "L'API d'état de TFL était basée sur l'ancienne version XML de l'API TFL disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres."
+			},
+			{
+				"name": "Mastermind en Ligne",
+				"description": "Une version web du jeu de société classique « Mastermind », créée dans le cadre de mon cours d'informatique. Elle propose différents niveaux de difficulté et un ensemble complet de règles pour aider les utilisateurs à comprendre les mécanismes du jeu."
+			},
+			{
+				"name": "Corynth",
+				"description": "Bot Discord polyvalent, créé en TypeScript avec Discord.js v13. Il proposait la modération et la configuration du serveur, des informations utilisateur détaillées, des services musicaux et bien plus encore. Il a été retiré du marché, ses coûts de fonctionnement étant devenus trop élevés pour être justifiés."
+			}
+		]
+	}
+}
