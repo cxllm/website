@@ -9,7 +9,13 @@ export default function Navigation() {
 	const language = getLanguage();
 	const translation = translations[language];
 	return (
-		<Navbar collapseOnSelect expand="lg" className="navigation" variant="dark">
+		<Navbar
+			collapseOnSelect
+			expand="lg"
+			className="navigation"
+			variant="dark"
+			id="top"
+		>
 			<Navbar.Brand to="/" as={Link}>
 				<img src="/avatar.png" className="logo" />
 			</Navbar.Brand>

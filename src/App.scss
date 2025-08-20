@@ -89,6 +89,9 @@ a {
 		width: 2em;
 		border-radius: 1em;
 	}
+	a.active {
+		color: #ffffff8c !important;
+	}
 	a:hover {
 		color: var(--accent);
 	}

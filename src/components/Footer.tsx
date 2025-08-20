@@ -7,10 +7,10 @@ export default function Footer() {
 		<>
 			<Navbar collapseOnSelect expand="lg" className="footer" variant="dark">
 				<Nav className="me-auto" style={{ width: "fit-content" }}>
-					<Nav.Link href="#">{translations[language].back}</Nav.Link>
+					<Nav.Link href="#top">{translations[language].back}</Nav.Link>
 				</Nav>
 				<Nav className="no-mobile">
-					<p>© 2025 Callum Rynne</p>
+					<Navbar.Text>© 2025 Callum Rynne</Navbar.Text>
 				</Nav>
 			</Navbar>
 		</>
