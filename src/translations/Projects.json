@@ -11,7 +11,7 @@
 				"description": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP)."
 			},
 			{
-				"name": "API d'État de TFL",
+				"name": "TFL Status API",
 				"description": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London."
 			},
 			{
