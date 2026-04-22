@@ -13,11 +13,8 @@ div.justify {
 	align-items: center;
 	flex-direction: column;
 	min-height: 84vh;
-	padding: 0;
+	padding: 0 1em;
 	height: fit-content;
-	@media screen and (max-width: 1000px) {
-		padding: 0 1em;
-	}
 	.intro {
 		height: 25em;
 		display: flex;
@@ -74,14 +71,13 @@ a {
 		width: 2em;
 		border-radius: 1em;
 	}
-	@media screen and (max-width: 1000px) {
-		padding: 0 1em;
-	}
+	padding: 0 1em;
 }
 
 .footer {
 	height: calc(8vh - 1em - 0.0625em);
-	padding: 0;
+	margin-top: 1em;
+	padding: 0 1em 0 1em;
 	background-color: inherit;
 	border-top: 0.0625em solid var(--accent);
 	margin-bottom: 1em;

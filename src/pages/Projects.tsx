@@ -36,6 +36,9 @@ export default function Projects() {
 	for (const i in projects) {
 		projects[i].name = translation.projects[i].name;
 		projects[i].description = translation.projects[i].description;
+		if (projects[i].end == "") {
+			projects[i].end = translation.present;
+		}
 	}
 	return (
 		<>
@@ -51,8 +54,7 @@ export default function Projects() {
 							</Link>
 							<i
 								style={{
-									float: "right",
-									fontStyle: "italic"
+									float: "right"
 								}}
 							>
 								{project.start} - {project.end}

@@ -4,8 +4,8 @@
 		"sections": {
 			"whoiam": {
 				"title": "Who am I?",
-				"text": "I am a [age]-year-old student and developer from the UK with a strong passion for technology and innovation. I started programming at 12, and it quickly became one of my main interests and creative outlets. Beyond coding, I am enthusiastic about languages and photography.",
-				"text2": "I enjoy collaborating on projects, learning new skills, and sharing knowledge with others. My goal is to create impactful solutions and continuously grow as both a developer and a person."
+				"text": "I am a university student and developer from the UK with a strong passion for technology and mathematics. I started programming at 12, and it quickly became one of my main interests and creative outlets. Beyond coding, I am enthusiastic about languages and photography.",
+				"text2": "I enjoy collaborating on projects, learning new skill and sharing knowledge with others. My goal is to create impactful solutions and continuously expand my knowledge and skills."
 			},
 			"education": {
 				"title": "Education",
@@ -15,7 +15,7 @@
 				},
 				"sf": {
 					"title": "Sixth Form",
-					"text": "For my A-Levels, I studied Maths, Further Maths, Computer Science, and French, and also completed an EPQ. My results:"
+					"text": "For my A-Levels, I studied Maths, Further Maths, Computer Science and French, and also completed an EPQ."
 				}
 			},
 			"ts": {
@@ -27,16 +27,12 @@
 					"db": "Databases",
 					"ott": "Other Tools & Technologies"
 				},
-				"bottom": "I am always eager to learn new technologies and best practices to improve my workflow and deliver robust solutions."
+				"bottom": "I am always looking to learn new technologies and best practices to improve my workflow and deliver robust solutions."
 			},
 			"languages": {
 				"title": "Languages",
-				"text": "I am a native English speaker and have been studying French both in school and independently for several years. My proficiency in French is approximately at the B1-B2 level.",
-				"text2": "I am also interested in learning other languages and enjoy exploring different cultures through language study.",
-				"english": "English",
-				"native": "Native",
-				"french": "French",
-				"intermediate": "Intermediate"
+				"text": "I am a native English speaker and have been studying French both in school and independently for several years. My French is at a B2 standard.",
+				"text2": "I am also interested in learning other languages and enjoy exploring different cultures through language study."
 			}
 		}
 	},
@@ -45,7 +41,7 @@
 		"sections": {
 			"whoiam": {
 				"title": "Qui suis-je?",
-				"text": "Je suis un étudiant et développeur britannique de [age] ans, passionné par la technologie et l'innovation. J'ai commencé la programmation à 12 ans, et c'est rapidement devenu l'un de mes prinicpaux centres d'intérêt et de mes source de créativité. Au-delà de ça, je suis passioné aussi par les langues et la photographie.",
+				"text": "Je suis étudiant universitaire et développeur britannique, passionné par la technologie et l'innovation. J'ai commencé la programmation à 12 ans, et c'est rapidement devenu l'un de mes prinicpaux centres d'intérêt et de mes source de créativité. Au-delà de ça, je suis passioné aussi par les langues et la photographie.",
 				"text2": "J'aime collaborer sur des projets, acquérir de nouvelles compétences et partager mes connaissances. Mon objectif est de créer des solutions efficaces et de progresser continuellement, tant en tant que développeur qu'en tant qu'individu."
 			},
 
@@ -57,7 +53,7 @@
 				},
 				"sf": {
 					"title": "Lycée",
-					"text": "Pour mon A-Level (équivalent britannique du bac), j'ai étudié les maths, les maths supplémentaires, l'informatique et le français, et j'ai également fait un EPQ (Qualification de Projet Étendu). Mes notes:"
+					"text": "Pour mon A-Level (équivalent britannique du bac), j'ai étudié les maths, les maths supplémentaires, l'informatique et le français, et j'ai également fait un EPQ (anglais pour Qualification de Projet Étendu)."
 				}
 			},
 			"ts": {
@@ -73,12 +69,8 @@
 			},
 			"languages": {
 				"title": "Langues",
-				"text": "Je suis anglophone et j'étudie le français à l'école et en privé depuis plusieurs années. Mon niveau de français est environ B1 ou B2.",
-				"text2": "Je suis également intéressé par l'apprentissage d'autres langues et j'aime explorer différentes cultures à travers l'étude des langues.",
-				"english": "Anglais",
-				"native": "Langue Maternelle",
-				"french": "Français",
-				"intermediate": "Intermédiaire"
+				"text": "Je suis anglophone et j'étudie le français à l'école et par moi-même depuis plusieurs années. Mon niveau de français est B2.",
+				"text2": "Je suis également intéressé par l'apprentissage d'autres langues et j'aime explorer différentes cultures à travers l'étude des langues."
 			}
 		}
 	}

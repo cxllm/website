@@ -14,7 +14,7 @@ export default function AboutMe() {
 			<div className="justify">
 				<h2>{whoiam.title}</h2>
 				<p>
-					{whoiam.text.replace("[age]", getAge().toString())}
+					{whoiam.text}
 					<br />
 					{whoiam.text2}
 				</p>
@@ -26,13 +26,6 @@ export default function AboutMe() {
 				<p>{education.uni.text}</p>
 				<h3>{education.sf.title}</h3>
 				<p>{education.sf.text}</p>
-				<ul>
-					<li>Maths – A*</li>
-					<li>Computer Science – A*</li>
-					<li>Further Maths – A</li>
-					<li>French – A</li>
-					<li>EPQ – A</li>
-				</ul>
 			</div>
 			<hr />
 			<div className="justify">
@@ -42,6 +35,10 @@ export default function AboutMe() {
 				<ul>
 					<li>TypeScript & JavaScript</li>
 					<li>Python</li>
+					<li>Java</li>
+					<li>R</li>
+					<li>SQL</li>
+					<li>Haskell</li>
 					<li>HTML5 & CSS3</li>
 					<li>SASS/SCSS</li>
 				</ul>
@@ -49,6 +46,7 @@ export default function AboutMe() {
 				<ul>
 					<li>React (including Hooks & Context API)</li>
 					<li>Node.js & Express</li>
+					<li>Package Management (NPM/Yarn & Pip)</li>
 					<li>Flask</li>
 					<li>Jinja2, EJS</li>
 				</ul>
@@ -57,13 +55,16 @@ export default function AboutMe() {
 					<li>PostgreSQL</li>
 					<li>SQLite</li>
 					<li>MongoDB</li>
+					<li>SQL Alchemy</li>
 				</ul>
 				<h3>{ts.titles.ott}</h3>
 				<ul>
 					<li>Git & GitHub</li>
 					<li>REST APIs</li>
-					<li>Linux & Bash scripting</li>
-					<li>Nginx</li>
+					<li>Linux & CLI</li>
+					<li>DNS Configuration</li>
+					<li>SSL</li>
+					<li>Nginx (Reverse Proxies)</li>
 				</ul>
 				<p>{ts.bottom}</p>
 			</div>
@@ -72,26 +73,7 @@ export default function AboutMe() {
 				<h2>{languages.title}</h2>
 				<p>{languages.text}</p>
 				<p>{languages.text2} </p>
-				<ul>
-					<li>
-						<strong>{languages.english}:</strong> {languages.native}
-					</li>
-					<li>
-						<strong>{languages.french}:</strong> {languages.intermediate} (B1-B2)
-					</li>
-				</ul>
 			</div>
 		</>
 	);
-}
-
-function getAge() {
-	const today = new Date();
-	const birthDate = new Date("2007-07-27");
-	let age = today.getFullYear() - birthDate.getFullYear();
-	const m = today.getMonth() - birthDate.getMonth();
-	if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-		age--;
-	}
-	return age;
 }

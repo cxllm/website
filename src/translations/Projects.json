@@ -1,6 +1,7 @@
 {
 	"en": {
 		"title": "My Projects",
+		"present": "Present",
 		"projects": [
 			{
 				"name": "This Website",
@@ -26,6 +27,7 @@
 	},
 	"fr": {
 		"title": "Mes Projets",
+		"present": "Présent",
 		"projects": [
 			{
 				"name": "Ce site web",
@@ -34,7 +36,7 @@
 
 			{
 				"name": "BoltPass",
-				"description": "BoltPass est mon projet NEA (Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP."
+				"description": "BoltPass est mon projet NEA (anglais pour Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP."
 			},
 			{
 				"name": "API d'État de TFL",

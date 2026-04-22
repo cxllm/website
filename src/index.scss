@@ -12,8 +12,8 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	--font-family: "Funnel Display", system-ui, Avenir, Helvetica, Arial,
-		sans-serif;
+	--font-family:
+		"Funnel Display", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -50,7 +50,7 @@ button {
 }
 body {
 	font-family: var(--font-family);
-	padding: 0 20em;
+	padding: 0 0em;
 	min-height: 100vh;
 	background-color: #1a1a1a;
 	color: white;
