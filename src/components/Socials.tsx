@@ -5,8 +5,8 @@ export default function Socials() {
 			<a href="https://github.com/cxllm" className="front">
 				<i className="fab fa-github" />
 			</a>
-			<a href="https://discord.com/users/536949735299219467">
-				<i className="fab fa-discord" />
+			<a href="https://linkedin.com/in/callumar">
+				<i className="fab fa-linkedin" />
 			</a>
 			<a href={`mailto:${email}`} className="back">
 				<i className="fa fa-envelope" />

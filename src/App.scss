@@ -12,7 +12,7 @@ div.justify {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	min-height: 84vh;
+	min-height: 84dvh;
 	padding: 0 1em;
 	height: fit-content;
 	.intro {
@@ -54,7 +54,7 @@ a {
 }
 
 .navigation {
-	min-height: calc(8vh - 1em - 0.0625em);
+	min-height: calc(8dvh - 1em - 0.0625em);
 	height: fit-content;
 	padding: 0;
 	background-color: inherit;
@@ -75,7 +75,7 @@ a {
 }
 
 .footer {
-	height: calc(8vh - 1em - 0.0625em);
+	height: calc(8dvh - 1em - 0.0625em);
 	margin-top: 1em;
 	padding: 0 1em 0 1em;
 	background-color: inherit;

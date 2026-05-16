@@ -5,23 +5,38 @@
 		"projects": [
 			{
 				"name": "This Website",
-				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript."
+				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript.",
+				"link": "https://github.com/cxllm/website",
+				"start": "09/21",
+				"end": ""
 			},
 			{
 				"name": "BoltPass",
-				"description": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP)."
+				"description": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP).",
+				"link": "https://github.com/cxllm/boltpass",
+				"start": "09/24",
+				"end": "03/25"
 			},
 			{
 				"name": "TFL Status API",
-				"description": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London."
+				"description": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London.",
+				"link": "https://github.com/cxllm/tfl-status-api",
+				"start": "05/22",
+				"end": "07/24"
 			},
 			{
 				"name": "Mastermind Online",
-				"description": "A single page website version of the classic board game 'Mastermind' created as part of my Computer Science course. It features varying levels of difficulty and a comprehensive set of rules to help users understand the mechanisms of the game."
+				"description": "A single page website version of the classic board game 'Mastermind' created as part of my Computer Science course. It features varying levels of difficulty and a comprehensive set of rules to help users understand the mechanisms of the game.",
+				"link": "https://github.com/cxllm/mastermind",
+				"start": "12/23",
+				"end": "01/24"
 			},
 			{
 				"name": "Corynth",
-				"description": "A multi-purpose discord bot made using TypeScript with Discord.js v13. It provided server moderation and configuration, detailed user information, music services and more. It was retired after the running costs became too high to justify"
+				"description": "A multi-purpose discord bot made using TypeScript with Discord.js v13. It provided server moderation and configuration, detailed user information, music services and more. It was retired after the running costs became too high to justify",
+				"link": "https://github.com/cxllm/corynth",
+				"start": "12/19",
+				"end": "04/23"
 			}
 		]
 	},
@@ -33,7 +48,6 @@
 				"name": "Ce site web",
 				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript."
 			},
-
 			{
 				"name": "BoltPass",
 				"description": "BoltPass est mon projet NEA (anglais pour Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP."
