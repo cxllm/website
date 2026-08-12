@@ -11,7 +11,7 @@
 				"title": "Education",
 				"uni": {
 					"title": "University",
-					"text": "I am currently a first-year BSc Computer Science and Mathematics student at the University of Bath."
+					"text": "I am currently a second-year BSc Computer Science and Mathematics student at the University of Bath. In my first year of studies, I achieved a first class grade."
 				},
 				"sf": {
 					"title": "Sixth Form",
@@ -49,7 +49,7 @@
 				"title": "Éducation",
 				"uni": {
 					"title": "Université",
-					"text": "Je suis actuellement étudiant en première année de licence en informatique et mathématiques à l'Université de Bath"
+					"text": "Je suis actuellement étudiant en deuxième année de licence en informatique et mathématiques à l'Université de Bath. Dans mon premier année, j'ai reçu une note « First Class » (Explication <a href=\"https://fr.wikipedia.org/wiki/Notation_acad%C3%A9mique_au_Royaume-Uni\">ici</a>)."
 				},
 				"sf": {
 					"title": "Lycée",

@@ -8,8 +8,8 @@ export default function AboutMe() {
 	const ts = translation.sections.ts;
 	const languages = translation.sections.languages;
 	return (
-		<>
-			<h2>{translation.title}</h2>
+		<div className="about-me">
+			<h2 className="title">{translation.title}</h2>
 			<hr />
 			<div className="justify">
 				<h2>{whoiam.title}</h2>
@@ -23,49 +23,59 @@ export default function AboutMe() {
 			<div className="justify">
 				<h2>{education.title}</h2>
 				<h3>{education.uni.title}</h3>
-				<p>{education.uni.text}</p>
+				<p dangerouslySetInnerHTML={{ __html: education.uni.text }}></p>
 				<h3>{education.sf.title}</h3>
 				<p>{education.sf.text}</p>
 			</div>
 			<hr />
-			<div className="justify">
+			<div>
 				<h2>{ts.title}</h2>
-				<p>{ts.text}</p>
-				<h3>{ts.titles.languages}</h3>
-				<ul>
-					<li>TypeScript & JavaScript</li>
-					<li>Python</li>
-					<li>Java</li>
-					<li>R</li>
-					<li>SQL</li>
-					<li>Haskell</li>
-					<li>HTML5 & CSS3</li>
-					<li>SASS/SCSS</li>
-				</ul>
-				<h3>{ts.titles.fal}</h3>
-				<ul>
-					<li>React (including Hooks & Context API)</li>
-					<li>Node.js & Express</li>
-					<li>Package Management (NPM/Yarn & Pip)</li>
-					<li>Flask</li>
-					<li>Jinja2, EJS</li>
-				</ul>
-				<h3>{ts.titles.db}</h3>
-				<ul>
-					<li>PostgreSQL</li>
-					<li>SQLite</li>
-					<li>MongoDB</li>
-					<li>SQL Alchemy</li>
-				</ul>
-				<h3>{ts.titles.ott}</h3>
-				<ul>
-					<li>Git & GitHub</li>
-					<li>REST APIs</li>
-					<li>Linux & CLI</li>
-					<li>DNS Configuration</li>
-					<li>SSL</li>
-					<li>Nginx (Reverse Proxies)</li>
-				</ul>
+				<p style={{ textAlign: "justify" }}>{ts.text}</p>
+				<div className="grid-container skills">
+					<div>
+						<h3>{ts.titles.languages}</h3>
+						<ul>
+							<li>TypeScript & JavaScript</li>
+							<li>Python</li>
+							<li>Java</li>
+							<li>R</li>
+							<li>SQL</li>
+							<li>Haskell</li>
+							<li>HTML5 & CSS3</li>
+							<li>SASS/SCSS</li>
+						</ul>
+					</div>
+					<div>
+						<h3>{ts.titles.fal}</h3>
+						<ul>
+							<li>React (including Hooks & Context API)</li>
+							<li>Node.js & Express</li>
+							<li>Package Management (NPM/Yarn & Pip)</li>
+							<li>Flask</li>
+							<li>Jinja2, EJS</li>
+						</ul>
+					</div>
+					<div>
+						<h3>{ts.titles.db}</h3>
+						<ul>
+							<li>PostgreSQL</li>
+							<li>SQLite</li>
+							<li>MongoDB</li>
+							<li>SQL Alchemy</li>
+						</ul>
+					</div>
+					<div>
+						<h3>{ts.titles.ott}</h3>
+						<ul>
+							<li>Git & GitHub</li>
+							<li>REST APIs</li>
+							<li>Linux & CLI</li>
+							<li>DNS Configuration</li>
+							<li>SSL</li>
+							<li>Nginx (Reverse Proxies)</li>
+						</ul>
+					</div>
+				</div>
 				<p>{ts.bottom}</p>
 			</div>
 			<hr />
@@ -74,6 +84,6 @@ export default function AboutMe() {
 				<p>{languages.text}</p>
 				<p>{languages.text2} </p>
 			</div>
-		</>
+		</div>
 	);
 }

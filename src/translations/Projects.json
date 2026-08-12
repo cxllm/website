@@ -4,8 +4,8 @@
 		"present": "Present",
 		"projects": [
 			{
-				"name": "This Website",
-				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript.",
+				"name": "My Personal Website",
+				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript, and supports versions in both English and French, with the capability to be expanded to further languages if needed.",
 				"link": "https://github.com/cxllm/website",
 				"start": "09/21",
 				"end": ""
@@ -45,8 +45,8 @@
 		"present": "Présent",
 		"projects": [
 			{
-				"name": "Ce site web",
-				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript."
+				"name": "Mon Site Web ",
+				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript, et il y a des traductions en anglais et en français avec la capabilité d'avoir plus de langues si nécessaire."
 			},
 			{
 				"name": "BoltPass",

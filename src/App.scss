@@ -29,6 +29,55 @@ div.justify {
 		}
 	}
 }
+
+.grid-container {
+	display: grid;
+	/* Automatically fits columns based on available space */
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	max-width: 125rem; /* Constrains line lengths while utilizing width */
+	margin: 0 auto;
+	margin: 1rem 0;
+
+	@media screen and (max-width: 1920px) {
+		grid-template-columns: 1fr;
+	}
+
+	div {
+		background-color: #33333333;
+		padding: 1rem;
+		border-radius: 1rem;
+		border-color: var(--accent);
+		border-width: 0.05rem;
+		border-style: solid;
+	}
+}
+.grid-container.skills {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 0.5rem;
+	@media screen and (max-width: 1920px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media screen and (max-width: 1000px) {
+		grid-template-columns: 1fr;
+	}
+	div {
+		h2 {
+			text-align: left;
+		}
+		ul {
+			font-size: larger;
+		}
+	}
+}
+.about-me {
+	@media screen and (min-width: 1920px) {
+		max-width: 125rem;
+	}
+	h2.title {
+		text-align: center;
+	}
+}
 hr {
 	color: var(--accent);
 	border: 0.0625em solid var(--accent);

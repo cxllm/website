@@ -17,27 +17,33 @@ export default function Projects() {
 	return (
 		<>
 			<h2>{translation.title}</h2>
-			{projects.map((project) => (
-				<>
-					{" "}
-					<hr />
-					<div className="flex justify">
-						<span style={{ fontSize: "1.5em" }}>
-							<Link to={project.link}>
-								<b>{project.name}</b>
-							</Link>
-							<i
-								style={{
-									float: "right"
-								}}
-							>
-								{project.start} - {project.end}
-							</i>
-						</span>
-						<p>{project.description}</p>
-					</div>
-				</>
-			))}
+
+			<div className="grid-container">
+				{projects.map((project) => (
+					<>
+						{" "}
+						{
+							//<hr />
+						}
+						<div className="flex justify">
+							<span style={{ fontSize: "1.5em" }} className="project-name">
+								<Link to={project.link}>
+									<b>{project.name}</b>
+								</Link>
+								<i
+									style={{
+										float: "right"
+									}}
+									className="date"
+								>
+									{project.start} - {project.end}
+								</i>
+							</span>
+							<p>{project.description}</p>
+						</div>
+					</>
+				))}
+			</div>
 		</>
 	);
 }
