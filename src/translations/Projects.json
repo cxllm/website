@@ -48,10 +48,10 @@
 		},
 		{
 			"name": {
-				"en": "Tfl (Transport for London) Status API",
-				"fr": "API d'État de Tfl (Transport pour Londres)"
+				"en": "TfL (Transport for London) Status API",
+				"fr": "API d'État de TfL (Transport pour Londres)"
 			},
-			"link": "https://github.com/cxllm/Tfl-status-api",
+			"link": "https://github.com/cxllm/tfl-status-api",
 			"start": {
 				"en": "May 2022",
 				"fr": "mai 2022"
@@ -61,8 +61,8 @@
 				"fr": "juillet 2024"
 			},
 			"description": {
-				"en": "The Tfl Status API was based on the older XML version of Tfl's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London.",
-				"fr": "L'API d'état de Tfl était basée sur l'ancienne version XML de l'API Tfl disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres."
+				"en": "The TfL Status API was based on the older XML version of TfL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London.",
+				"fr": "L'API d'état de TfL était basée sur l'ancienne version XML de l'API TfL disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres."
 			}
 		},
 		{
