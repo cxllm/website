@@ -1,39 +1,38 @@
 import translations from "../translations/About.json";
 import { getLanguage } from "../util/language";
 export default function AboutMe() {
-	const language = getLanguage();
-	const translation = translations[language];
-	const whoiam = translation.sections.whoiam;
-	const education = translation.sections.education;
-	const ts = translation.sections.ts;
-	const languages = translation.sections.languages;
+	const l = getLanguage();
+	const whoiam = translations.sections.whoiam;
+	const education = translations.sections.education;
+	const ts = translations.sections.ts;
+	const languages = translations.sections.languages;
 	return (
 		<div className="about-me">
-			<h2 className="title">{translation.title}</h2>
+			<h2 className="title">{translations.title[l]}</h2>
 			<hr />
 			<div className="justify">
-				<h2>{whoiam.title}</h2>
+				<h2>{whoiam.title[l]}</h2>
 				<p>
-					{whoiam.text}
+					{whoiam.text[l]}
 					<br />
-					{whoiam.text2}
+					{whoiam.text2[l]}
 				</p>
 			</div>
 			<hr />
 			<div className="justify">
-				<h2>{education.title}</h2>
-				<h3>{education.uni.title}</h3>
-				<p dangerouslySetInnerHTML={{ __html: education.uni.text }}></p>
-				<h3>{education.sf.title}</h3>
-				<p>{education.sf.text}</p>
+				<h2>{education.title[l]}</h2>
+				<h3>{education.uni.title[l]}</h3>
+				<p dangerouslySetInnerHTML={{ __html: education.uni.text[l] }}></p>
+				<h3>{education.sf.title[l]}</h3>
+				<p>{education.sf.text[l]}</p>
 			</div>
 			<hr />
 			<div>
-				<h2>{ts.title}</h2>
-				<p style={{ textAlign: "justify" }}>{ts.text}</p>
+				<h2>{ts.title[l]}</h2>
+				<p style={{ textAlign: "justify" }}>{ts.text[l]}</p>
 				<div className="grid-container skills">
 					<div>
-						<h3>{ts.titles.languages}</h3>
+						<h3>{ts.titles.languages[l]}</h3>
 						<ul>
 							<li>TypeScript & JavaScript</li>
 							<li>Python</li>
@@ -46,7 +45,7 @@ export default function AboutMe() {
 						</ul>
 					</div>
 					<div>
-						<h3>{ts.titles.fal}</h3>
+						<h3>{ts.titles.fal[l]}</h3>
 						<ul>
 							<li>React (including Hooks & Context API)</li>
 							<li>Node.js & Express</li>
@@ -56,7 +55,7 @@ export default function AboutMe() {
 						</ul>
 					</div>
 					<div>
-						<h3>{ts.titles.db}</h3>
+						<h3>{ts.titles.db[l]}</h3>
 						<ul>
 							<li>PostgreSQL</li>
 							<li>SQLite</li>
@@ -65,7 +64,7 @@ export default function AboutMe() {
 						</ul>
 					</div>
 					<div>
-						<h3>{ts.titles.ott}</h3>
+						<h3>{ts.titles.ott[l]}</h3>
 						<ul>
 							<li>Git & GitHub</li>
 							<li>REST APIs</li>
@@ -76,13 +75,13 @@ export default function AboutMe() {
 						</ul>
 					</div>
 				</div>
-				<p>{ts.bottom}</p>
+				<p>{ts.bottom[l]}</p>
 			</div>
 			<hr />
 			<div className="justify">
-				<h2>{languages.title}</h2>
-				<p>{languages.text}</p>
-				<p>{languages.text2} </p>
+				<h2>{languages.title[l]}</h2>
+				<p>{languages.text[l]}</p>
+				<p>{languages.text2[l]} </p>
 			</div>
 		</div>
 	);

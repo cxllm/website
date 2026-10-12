@@ -1,14 +1,18 @@
 {
-	"en": {
-		"intro": "Computer Science & Mathematics student.",
-		"aboutme": "About Me",
-		"projects": "My Projects",
-		"source": "Source Code"
+	"intro": {
+		"en": "UK-based Computer Science & Mathematics student",
+		"fr": "Étudiant en informatique et mathématiques au Royaume-Uni"
 	},
-	"fr": {
-		"intro": "Étudiant en informatique et mathématiques.",
-		"aboutme": "À Propos de Moi",
-		"projects": "Mes Projets",
-		"source": "Code Source"
+	"aboutme": {
+		"en": "About Me",
+		"fr": "À Propos de Moi"
+	},
+	"projects": {
+		"en": "Projects",
+		"fr": "Projets"
+	},
+	"source": {
+		"en": "Source Code",
+		"fr": "Code Source"
 	}
 }

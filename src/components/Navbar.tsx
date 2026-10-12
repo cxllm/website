@@ -8,7 +8,6 @@ import { useState, useCallback } from "react";
 
 export default function Navigation() {
 	const language = getLanguage();
-	const translation = translations[language];
 	const [expanded, setExpanded] = useState(false);
 
 	const handleNavClick = useCallback(() => setExpanded(false), []);
@@ -30,10 +29,10 @@ export default function Navigation() {
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="me-auto">
 					<Nav.Link to="/about" as={Link} onClick={handleNavClick}>
-						{translation.about}
+						{translations.about[language]}
 					</Nav.Link>
 					<Nav.Link to="/projects" as={Link} onClick={handleNavClick}>
-						{translation.projects}
+						{translations.projects[language]}
 					</Nav.Link>
 				</Nav>
 				<Nav>

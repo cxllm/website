@@ -1,4 +1,3 @@
 {
-	"en": { "back": "Back to top" },
-	"fr": { "back": "Retour en haut" }
+	"back": { "en": "Back to top", "fr": "Retour en haut" }
 }

@@ -1,4 +1,10 @@
 {
-	"en": { "about": "About Me", "projects": "Projects" },
-	"fr": { "about": "À Propos de Moi", "projects": "Projets" }
+	"about": {
+		"en": "About Me",
+		"fr": "À Propos de Moi"
+	},
+	"projects": {
+		"en": "Projects",
+		"fr": "Projets"
+	}
 }

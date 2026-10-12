@@ -1,76 +1,93 @@
 {
-	"en": {
-		"title": "About Me",
-		"sections": {
-			"whoiam": {
-				"title": "Who am I?",
-				"text": "I am a university student and developer from the UK with a strong passion for technology and mathematics. I started programming during lockdown, and it quickly became one of my main interests and creative outlets. Beyond coding, I am enthusiastic about languages and photography.",
-				"text2": "I enjoy collaborating on projects, learning new skill and sharing knowledge with others. My goal is to create impactful solutions and continuously expand my knowledge and skills."
-			},
-			"education": {
-				"title": "Education",
-				"uni": {
-					"title": "University",
-					"text": "I am currently a second-year BSc Computer Science and Mathematics student at the University of Bath. In my first year of studies, I achieved a first class grade."
-				},
-				"sf": {
-					"title": "Sixth Form",
-					"text": "For my A-Levels, I studied Maths, Further Maths, Computer Science and French, and also completed an EPQ."
-				}
-			},
-			"ts": {
-				"title": "Technical Skills",
-				"text": "I have hands-on experience building both frontend and backend applications, with a focus on clean, maintainable code and modern development practices. My skillset covers a range of languages, frameworks, and tools commonly used in web development.",
-				"titles": {
-					"languages": "Languages",
-					"fal": "Frameworks & Libraries",
-					"db": "Databases",
-					"ott": "Other Tools & Technologies"
-				},
-				"bottom": "I am always looking to learn new technologies and best practices to improve my workflow and deliver robust solutions."
-			},
-			"languages": {
-				"title": "Languages",
-				"text": "I am a native English speaker and have been studying French both in school and independently for several years. My French is at a B2 standard.",
-				"text2": "I am also interested in learning other languages and enjoy exploring different cultures through language study."
-			}
-		}
+	"title": {
+		"en": "About Me",
+		"fr": "À Propos de Moi"
 	},
-	"fr": {
-		"title": "À Propos de Moi",
-		"sections": {
-			"whoiam": {
-				"title": "Qui suis-je?",
-				"text": "Je suis étudiant universitaire et développeur britannique, passionné par la technologie et l'innovation. J'ai commencé la programmation pendant le confinement, et c'est rapidement devenu l'un de mes prinicpaux centres d'intérêt et de mes source de créativité. Au-delà de ça, je suis passioné aussi par les langues et la photographie.",
-				"text2": "J'aime collaborer sur des projets, acquérir de nouvelles compétences et partager mes connaissances. Mon objectif est de créer des solutions efficaces et de progresser continuellement, tant en tant que développeur qu'en tant qu'individu."
+	"sections": {
+		"whoiam": {
+			"title": {
+				"en": "Who am I?",
+				"fr": "Qui suis-je?"
 			},
-
-			"education": {
-				"title": "Éducation",
-				"uni": {
-					"title": "Université",
-					"text": "Je suis actuellement étudiant en deuxième année de licence en informatique et mathématiques à l'Université de Bath. Dans mon premier année, j'ai reçu une note « First Class » (Explication <a href=\"https://fr.wikipedia.org/wiki/Notation_acad%C3%A9mique_au_Royaume-Uni\">ici</a>)."
+			"text": {
+				"en": "I am a university student and developer from the UK with a strong passion for technology and mathematics. I started programming during lockdown, and it quickly became one of my main interests and creative outlets. Beyond coding, I am enthusiastic about languages and photography.",
+				"fr": "Je suis étudiant universitaire et développeur britannique, passionné par la technologie et l'innovation. J'ai commencé la programmation pendant le confinement, et c'est rapidement devenu l'un de mes prinicpaux centres d'intérêt et de mes source de créativité. Au-delà de ça, je suis passioné aussi par les langues et la photographie."
+			},
+			"text2": {
+				"en": "I enjoy collaborating on projects, learning new skill and sharing knowledge with others. My goal is to create impactful solutions and continuously expand my knowledge and skills.",
+				"fr": "J'aime collaborer sur des projets, acquérir de nouvelles compétences et partager mes connaissances. Mon objectif est de créer des solutions efficaces et de progresser continuellement, tant en tant que développeur qu'en tant qu'individu"
+			}
+		},
+		"education": {
+			"title": {
+				"en": "Education",
+				"fr": "Éducation"
+			},
+			"uni": {
+				"title": {
+					"en": "University",
+					"fr": "Université"
 				},
-				"sf": {
-					"title": "Lycée",
-					"text": "Pour mon A-Level (équivalent britannique du bac), j'ai étudié les maths, les maths supplémentaires, l'informatique et le français, et j'ai également fait un EPQ (anglais pour Qualification de Projet Étendu)."
+				"text": {
+					"en": "I am currently a second-year BSc Computer Science and Mathematics student at the University of Bath. In my first year of studies, I achieved a first class grade.",
+					"fr": "Je suis actuellement étudiant en deuxième année de licence en informatique et mathématiques à l'Université de Bath. Dans mon premier année, j'ai reçu une note « First Class » (Explication <a href=\"https://fr.wikipedia.org/wiki/Notation_acad%C3%A9mique_au_Royaume-Uni\">ici</a>)."
 				}
 			},
-			"ts": {
-				"title": "Compétences Techniques",
-				"text": "J'ai une expérience pratique de la création d'applications front-end et back-end, en mettant l'accent sur un code propre et maintenable, ainsi que sur des pratique de développement modernes. Mes compétences couvrent un large éventail de langages, frameworks et outils couramment utilisés en développement web.",
-				"titles": {
-					"languages": "Langages",
-					"fal": "Frameworks & Logithèques",
-					"db": "Bases de Données",
-					"ott": "Autres Outils & Technologies"
+			"sf": {
+				"title": {
+					"en": "Sixth Form",
+					"fr": "Lycée"
 				},
-				"bottom": "Je veux toujours apprendre de nouvelles technologies et de meilleures pratiques pour améliorer mon flux de travail et fournir des solutions robustes."
+				"text": {
+					"en": "For my A-Levels, I studied Maths, Further Maths, Computer Science and French, and also completed an EPQ.",
+					"fr": "Pour mon A-Level (équivalent britannique du bac), j'ai étudié les maths, les maths supplémentaires, l'informatique et le français, et j'ai également fait un EPQ (anglais pour Qualification de Projet Étendu)."
+				}
+			}
+		},
+		"ts": {
+			"title": {
+				"en": "Technical Skills",
+				"fr": "Compétences Techniques"
 			},
-			"languages": {
-				"title": "Langues",
-				"text": "Je suis anglophone et j'étudie le français à l'école et par moi-même depuis plusieurs années. Mon niveau de français est B2.",
-				"text2": "Je suis également intéressé par l'apprentissage d'autres langues et j'aime explorer différentes cultures à travers l'étude des langues."
+			"text": {
+				"en": "I have hands-on experience building both frontend and backend applications, with a focus on clean, maintainable code and modern development practices. My skillset covers a range of languages, frameworks, and tools commonly used in web development.",
+				"fr": "J'ai une expérience pratique de la création d'applications front-end et back-end, en mettant l'accent sur un code propre et maintenable, ainsi que sur des pratique de développement modernes. Mes compétences couvrent un large éventail de langages, frameworks et outils couramment utilisés en développement web."
+			},
+			"titles": {
+				"languages": {
+					"en": "Languages",
+					"fr": "Langages"
+				},
+				"fal": {
+					"en": "Frameworks & Libraries",
+					"fr": "Frameworks & Logithèques"
+				},
+				"db": {
+					"en": "Databases",
+					"fr": "Bases de Données"
+				},
+				"ott": {
+					"en": "Other Tools & Technologies",
+					"fr": "Autres Outils & Technologies"
+				}
+			},
+			"bottom": {
+				"en": "I am always looking to learn new technologies and best practices to improve my workflow and deliver robust solutions.",
+				"fr": "Je veux toujours apprendre de nouvelles technologies et de meilleures pratiques pour améliorer mon flux de travail et fournir des solutions robustes."
+			}
+		},
+		"languages": {
+			"title": {
+				"en": "Languages",
+				"fr": "Langues"
+			},
+			"text": {
+				"en": "I am a native English speaker and have been studying French both in school and independently for several years. My French is at a B2 standard.",
+				"fr": "Je suis anglophone et j'étudie le français à l'école et par moi-même depuis plusieurs années. Mon niveau de français est B2."
+			},
+			"text2": {
+				"en": "I am also interested in learning other languages and enjoy exploring different cultures through language study.",
+				"fr": "Je suis également intéressé par l'apprentissage d'autres langues et j'aime explorer différentes cultures à travers l'étude des langues."
 			}
 		}
 	}

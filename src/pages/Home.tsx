@@ -3,8 +3,7 @@ import Socials from "../components/Socials";
 import translations from "../translations/Home.json";
 import { getLanguage } from "../util/language";
 export default function Home() {
-	const language = getLanguage();
-	const translation = translations[language];
+	const l = getLanguage();
 
 	return (
 		<>
@@ -13,10 +12,10 @@ export default function Home() {
 					<img src="/avatar.png" className="logo" />
 					<h2>Callum Rynne</h2>
 					<Socials />
-					<p>{translation.intro}</p>
-					<Link to="/about">{translation.aboutme}</Link> |{" "}
-					<Link to="/projects">{translation.projects}</Link> |{" "}
-					<Link to="https://github.com/cxllm/website">{translation.source}</Link>
+					<p>{translations.intro[l]}</p>
+					<Link to="/about">{translations.aboutme[l]}</Link> |{" "}
+					<Link to="/projects">{translations.projects[l]}</Link> |{" "}
+					<Link to="https://github.com/cxllm/website">{translations.source[l]}</Link>
 				</div>
 			</div>
 			<p></p>

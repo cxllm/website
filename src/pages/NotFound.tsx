@@ -2,13 +2,12 @@ import { getLanguage } from "../util/language";
 import translations from "../translations/NotFound.json";
 import { Link } from "react-router";
 export default function NotFound() {
-	const language = getLanguage();
-	const translation = translations[language];
+	const l = getLanguage();
 	return (
 		<>
-			<h2>{translation.title}</h2>
-			<p>{translation.text}</p>
-			<Link to="/">{translation.back}</Link>
+			<h2>{translations.title[l]}</h2>
+			<p>{translations.text[l]}</p>
+			<Link to="/">{translations.back[l]}</Link>
 		</>
 	);
 }

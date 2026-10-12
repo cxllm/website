@@ -1,79 +1,107 @@
 {
-	"en": {
-		"title": "My Projects",
-		"present": "Present",
-		"projects": [
-			{
-				"name": "My Personal Website",
-				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript, and supports versions in both English and French, with the capability to be expanded to further languages if needed.",
-				"link": "https://github.com/cxllm/website",
-				"start": "September 2021",
-				"end": ""
-			},
-			{
-				"name": "BoltPass",
-				"description": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP).",
-				"link": "https://github.com/cxllm/boltpass",
-				"start": "September 2024",
-				"end": "March 2025"
-			},
-			{
-				"name": "TFL Status API",
-				"description": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London.",
-				"link": "https://github.com/cxllm/tfl-status-api",
-				"start": "May 2022",
-				"end": "July 2024"
-			},
-			{
-				"name": "Mastermind Online",
-				"description": "A single page website version of the classic board game 'Mastermind' created as part of my Computer Science course. It features varying levels of difficulty and a comprehensive set of rules to help users understand the mechanisms of the game.",
-				"link": "https://github.com/cxllm/mastermind",
-				"start": "December 2023",
-				"end": "January 2024"
-			},
-			{
-				"name": "Corynth",
-				"description": "A multi-purpose discord bot made using TypeScript with Discord.js v13. It provided server moderation and configuration, detailed user information, music services and more. It was retired after the running costs became too high to justify",
-				"link": "https://github.com/cxllm/corynth",
-				"start": "December 2019",
-				"end": "April 2023"
-			}
-		]
+	"title": {
+		"en": "My Projects",
+		"fr": "Mes Projets"
 	},
-	"fr": {
-		"title": "Mes Projets",
-		"present": "Présent",
-		"projects": [
-			{
-				"name": "Mon Site Web ",
-				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript, et il y a des traductions en anglais et en français avec la capabilité d'avoir plus de langues si nécessaire.",
-				"start": "Septembre 2021",
-				"end": ""
+	"present": {
+		"en": "Present",
+		"fr": "aujourd'hui"
+	},
+	"projects": [
+		{
+			"name": {
+				"en": "My Personal Website",
+				"fr": "Mon Site Web Personel"
 			},
-			{
-				"name": "BoltPass",
-				"description": "BoltPass est mon projet NEA (anglais pour Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP.",
-				"start": "Septembre 2024",
-				"end": "Mars 2025"
+			"link": "https://github.com/cxllm/website",
+			"start": {
+				"en": "September 2021",
+				"fr": "septembre 2021"
 			},
-			{
-				"name": "API d'État de TFL",
-				"description": "L'API d'état de TFL était basée sur l'ancienne version XML de l'API TFL disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres.",
-				"start": "Mai 2022",
-				"end": "Juillet 2024"
+			"end": {
+				"en": "",
+				"fr": ""
 			},
-			{
-				"name": "Mastermind en Ligne",
-				"description": "Une version web du jeu de société classique « Mastermind », créée dans le cadre de mon cours d'informatique. Elle propose différents niveaux de difficulté et un ensemble complet de règles pour aider les utilisateurs à comprendre les mécanismes du jeu.",
-				"start": "Décembre 2023",
-				"end": "Janvier 2024"
-			},
-			{
-				"name": "Corynth",
-				"description": "Bot Discord polyvalent, créé en TypeScript avec Discord.js v13. Il proposait la modération et la configuration du serveur, des informations utilisateur détaillées, des services musicaux et bien plus encore. Il a été retiré du marché, ses coûts de fonctionnement étant devenus trop élevés pour être justifiés.",
-				"start": "Décembre 2019",
-				"end": "Avril 2023"
+			"description": {
+				"en": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript, and supports versions in both English and French, with the capability to be expanded to further languages if needed.",
+				"fr": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript, et il y a des traductions en anglais et en français avec la capabilité d'avoir plus de langues si nécessaire."
 			}
-		]
-	}
+		},
+		{
+			"name": {
+				"en": "BoltPass",
+				"fr": "BoltPass"
+			},
+			"link": "https://github.com/cxllm/boltpass",
+			"start": {
+				"en": "September 2024",
+				"fr": "septembre 2024"
+			},
+			"end": {
+				"en": "Maech 2025",
+				"fr": "mars 2025"
+			},
+			"description": {
+				"en": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP).",
+				"fr": "BoltPass est mon projet NEA (anglais pour Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP."
+			}
+		},
+		{
+			"name": {
+				"en": "TFL Status API",
+				"fr": "API d'État de TFL"
+			},
+			"link": "https://github.com/cxllm/tfl-status-api",
+			"start": {
+				"en": "May 2022",
+				"fr": "mai 2022"
+			},
+			"end": {
+				"en": "July 2022",
+				"fr": "juillet 2024"
+			},
+			"description": {
+				"en": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London.",
+				"fr": "L'API d'état de TFL était basée sur l'ancienne version XML de l'API TFL disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres."
+			}
+		},
+		{
+			"name": {
+				"en": "Mastermind Online",
+				"fr": "Mastermind sur Internet"
+			},
+			"link": "https://github.com/cxllm/mastermind",
+			"start": {
+				"en": "December 2023",
+				"fr": "décembre 2023"
+			},
+			"end": {
+				"en": "January 2024",
+				"fr": "janvier 2024"
+			},
+			"description": {
+				"en": "A single page website version of the classic board game 'Mastermind' created as part of my Computer Science course. It features varying levels of difficulty and a comprehensive set of rules to help users understand the mechanisms of the game.",
+				"fr": "Une version web du jeu de société classique « Mastermind », créée dans le cadre de mon cours d'informatique. Elle propose différents niveaux de difficulté et un ensemble complet de règles pour aider les utilisateurs à comprendre les mécanismes du jeu."
+			}
+		},
+		{
+			"name": {
+				"en": "Corynth (Discord Bot)",
+				"fr": "Corynth (Bot pour Discord)"
+			},
+			"link": "https://github.com/cxllm/corynth",
+			"start": {
+				"en": "December 2019",
+				"fr": "décembre 2019"
+			},
+			"end": {
+				"en": "April 2023",
+				"fr": "avril 2023"
+			},
+			"description": {
+				"en": "A multi-purpose discord bot made using TypeScript with Discord.js v13. It provided server moderation and configuration, detailed user information, music services and more. It was retired after the running costs became too high to justify",
+				"fr": "Bot Discord polyvalent, créé en TypeScript avec Discord.js v13. Il proposait la modération et la configuration du serveur, des informations utilisateur détaillées, des services musicaux et bien plus encore. Il a été retiré du marché, ses coûts de fonctionnement étant devenus trop élevés pour être justifiés."
+			}
+		}
+	]
 }

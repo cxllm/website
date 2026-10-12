@@ -2,26 +2,13 @@ import { Link } from "react-router";
 import translations from "../translations/Projects.json";
 import { getLanguage } from "../util/language";
 export default function Projects() {
-	const language = getLanguage();
-	const translation = translations[language];
-	const projects = translations["en"].projects.map((project, i) => {
-		if (language != "en") {
-			project.name = translation.projects[i].name;
-			project.description = translation.projects[i].description;
-			project.start = translation.projects[i].start;
-			project.end = translation.projects[i].end;
-		}
-		if (project.end == "") {
-			project.end = translation.present;
-		}
-		return project;
-	});
+	const l = getLanguage();
 	return (
 		<>
-			<h2>{translation.title}</h2>
+			<h2>{translations.title[l]}</h2>
 
 			<div className="grid-container">
-				{projects.map((project) => (
+				{translations.projects.map((project) => (
 					<>
 						{" "}
 						{
@@ -30,13 +17,14 @@ export default function Projects() {
 						<div className="flex justify">
 							<span style={{ fontSize: "1.5em" }} className="project-name">
 								<Link to={project.link}>
-									<b>{project.name}</b>
+									<b>{project.name[l]}</b>
 								</Link>
 							</span>
 							<p className="date">
-								{project.start} - {project.end}
+								{project.start[l]} -{" "}
+								{project.end[l] == "" ? translations.present[l] : project.end[l]}
 							</p>
-							<p>{project.description}</p>
+							<p>{project.description[l]}</p>
 						</div>
 					</>
 				))}
