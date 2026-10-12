@@ -8,6 +8,8 @@ export default function Projects() {
 		if (language != "en") {
 			project.name = translation.projects[i].name;
 			project.description = translation.projects[i].description;
+			project.start = translation.projects[i].start;
+			project.end = translation.projects[i].end;
 		}
 		if (project.end == "") {
 			project.end = translation.present;
@@ -30,15 +32,10 @@ export default function Projects() {
 								<Link to={project.link}>
 									<b>{project.name}</b>
 								</Link>
-								<i
-									style={{
-										float: "right"
-									}}
-									className="date"
-								>
-									{project.start} - {project.end}
-								</i>
 							</span>
+							<p className="date">
+								{project.start} - {project.end}
+							</p>
 							<p>{project.description}</p>
 						</div>
 					</>

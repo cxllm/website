@@ -7,36 +7,36 @@
 				"name": "My Personal Website",
 				"description": "This website has been my permanent, longest-running project, as I have remade it countless times in different languages, frameworks and styles. The most recent version is written using React and TypeScript, and supports versions in both English and French, with the capability to be expanded to further languages if needed.",
 				"link": "https://github.com/cxllm/website",
-				"start": "09/21",
+				"start": "September 2021",
 				"end": ""
 			},
 			{
 				"name": "BoltPass",
 				"description": "BoltPass is my A-Level Computer Science NEA (Non-Examinable Assessment) project. It is a simple password manager that makes use of AES-256 encryption alongside PBKDF2 to encrypt users' passwords. It provides functionality such as email verification, password changing and 2 factor authentication used time-based one time passcode (TOTP).",
 				"link": "https://github.com/cxllm/boltpass",
-				"start": "09/24",
-				"end": "03/25"
+				"start": "September 2024",
+				"end": "March 2025"
 			},
 			{
 				"name": "TFL Status API",
 				"description": "The TFL Status API was based on the older XML version of TFL's API that was available without an API key, which has since been retired. You could find up to date information about the status of the Tube (such as delays and cancellations), planned Tube closures, and information about Santander Cycle stations in London.",
 				"link": "https://github.com/cxllm/tfl-status-api",
-				"start": "05/22",
-				"end": "07/24"
+				"start": "May 2022",
+				"end": "July 2024"
 			},
 			{
 				"name": "Mastermind Online",
 				"description": "A single page website version of the classic board game 'Mastermind' created as part of my Computer Science course. It features varying levels of difficulty and a comprehensive set of rules to help users understand the mechanisms of the game.",
 				"link": "https://github.com/cxllm/mastermind",
-				"start": "12/23",
-				"end": "01/24"
+				"start": "December 2023",
+				"end": "January 2024"
 			},
 			{
 				"name": "Corynth",
 				"description": "A multi-purpose discord bot made using TypeScript with Discord.js v13. It provided server moderation and configuration, detailed user information, music services and more. It was retired after the running costs became too high to justify",
 				"link": "https://github.com/cxllm/corynth",
-				"start": "12/19",
-				"end": "04/23"
+				"start": "December 2019",
+				"end": "April 2023"
 			}
 		]
 	},
@@ -46,23 +46,33 @@
 		"projects": [
 			{
 				"name": "Mon Site Web ",
-				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript, et il y a des traductions en anglais et en français avec la capabilité d'avoir plus de langues si nécessaire."
+				"description": "Ce site web est mon projet permanent et le plus ancien, car je l'ai refait plusieurs fois dans différents langages, frameworks et styles. La version la plus récente est écrite en React et TypeScript, et il y a des traductions en anglais et en français avec la capabilité d'avoir plus de langues si nécessaire.",
+				"start": "Septembre 2021",
+				"end": ""
 			},
 			{
 				"name": "BoltPass",
-				"description": "BoltPass est mon projet NEA (anglais pour Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP."
+				"description": "BoltPass est mon projet NEA (anglais pour Évaluation Non Examinable) d'informatique pour mon A-Level. Il s'agit d'un gestionnaire de mots de passe simple qui utilisent le chiffrement AES-256 et PBKDF2 pour chiffer les mots de passe. Il offre des fonctionnalités comme la vérification des e-mails, la modification des mots de passe et l'authentification à deux facteurs utilisant TOTP.",
+				"start": "Septembre 2024",
+				"end": "Mars 2025"
 			},
 			{
 				"name": "API d'État de TFL",
-				"description": "L'API d'état de TFL était basée sur l'ancienne version XML de l'API TFL disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres."
+				"description": "L'API d'état de TFL était basée sur l'ancienne version XML de l'API TFL disponible sans clé API et désormais supprimée. On pouvait y trouver des infos sur l'état du métro (retards et annulations, par exemple), les fermetures prévus et les stations Santander Cycle à Londres.",
+				"start": "Mai 2022",
+				"end": "Juillet 2024"
 			},
 			{
 				"name": "Mastermind en Ligne",
-				"description": "Une version web du jeu de société classique « Mastermind », créée dans le cadre de mon cours d'informatique. Elle propose différents niveaux de difficulté et un ensemble complet de règles pour aider les utilisateurs à comprendre les mécanismes du jeu."
+				"description": "Une version web du jeu de société classique « Mastermind », créée dans le cadre de mon cours d'informatique. Elle propose différents niveaux de difficulté et un ensemble complet de règles pour aider les utilisateurs à comprendre les mécanismes du jeu.",
+				"start": "Décembre 2023",
+				"end": "Janvier 2024"
 			},
 			{
 				"name": "Corynth",
-				"description": "Bot Discord polyvalent, créé en TypeScript avec Discord.js v13. Il proposait la modération et la configuration du serveur, des informations utilisateur détaillées, des services musicaux et bien plus encore. Il a été retiré du marché, ses coûts de fonctionnement étant devenus trop élevés pour être justifiés."
+				"description": "Bot Discord polyvalent, créé en TypeScript avec Discord.js v13. Il proposait la modération et la configuration du serveur, des informations utilisateur détaillées, des services musicaux et bien plus encore. Il a été retiré du marché, ses coûts de fonctionnement étant devenus trop élevés pour être justifiés.",
+				"start": "Décembre 2019",
+				"end": "Avril 2023"
 			}
 		]
 	}

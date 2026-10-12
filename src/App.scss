@@ -3,20 +3,22 @@
 :root {
 	--accent: #51a2ff;
 }
+
 div.justify {
 	width: 100%;
 	text-align: justify;
 }
+
 .content {
+	flex: 1 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	min-height: 84dvh;
 	padding: 0 1em;
 	height: fit-content;
 	.intro {
-		height: 25em;
+		min-height: 25em;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -52,6 +54,7 @@ div.justify {
 		border-style: solid;
 	}
 }
+
 .grid-container.skills {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 0.5rem;
@@ -103,10 +106,9 @@ a {
 }
 
 .navigation {
-	min-height: calc(8dvh - 1em - 0.0625em);
-	height: fit-content;
 	padding: 0;
 	background-color: inherit;
+	flex: none;
 	border-bottom: 0.0625em solid var(--accent);
 	margin-bottom: 1em;
 	a,
@@ -124,7 +126,7 @@ a {
 }
 
 .footer {
-	height: calc(8dvh - 1em - 0.0625em);
+	//height: calc(8dvh - 1em - 0.0625em);
 	margin-top: 1em;
 	padding: 0 1em 0 1em;
 	background-color: inherit;
@@ -143,4 +145,8 @@ a {
 	@media screen and (max-width: 1000px) {
 		padding: 0 1em;
 	}
+}
+p.date {
+	color: #fffa;
+	font-size: medium;
 }
