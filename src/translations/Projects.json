@@ -11,7 +11,7 @@
 		{
 			"name": {
 				"en": "My Personal Website",
-				"fr": "Mon Site Web Personel"
+				"fr": "Mon Site Personnel"
 			},
 			"link": "https://github.com/cxllm/website",
 			"start": {
@@ -29,8 +29,8 @@
 		},
 		{
 			"name": {
-				"en": "BoltPass",
-				"fr": "BoltPass"
+				"en": "BoltPass (Password Manager)",
+				"fr": "BoltPass (Gestionnaire de Mots de Passe)"
 			},
 			"link": "https://github.com/cxllm/boltpass",
 			"start": {
@@ -38,7 +38,7 @@
 				"fr": "septembre 2024"
 			},
 			"end": {
-				"en": "Maech 2025",
+				"en": "March 2025",
 				"fr": "mars 2025"
 			},
 			"description": {
@@ -48,8 +48,8 @@
 		},
 		{
 			"name": {
-				"en": "TFL Status API",
-				"fr": "API d'État de TFL"
+				"en": "TfL (Transport for London) Status API",
+				"fr": "API d'État de TfL (Transport pour Londres)"
 			},
 			"link": "https://github.com/cxllm/tfl-status-api",
 			"start": {
@@ -87,7 +87,7 @@
 		{
 			"name": {
 				"en": "Corynth (Discord Bot)",
-				"fr": "Corynth (Bot pour Discord)"
+				"fr": "Corynth (Bot Discord)"
 			},
 			"link": "https://github.com/cxllm/corynth",
 			"start": {
