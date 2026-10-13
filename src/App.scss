@@ -36,10 +36,10 @@ div.justify {
 // generic grid container for divs
 .grid-container {
 	display: grid;
-	/* Automatically fits columns based on available space */
+	// automatically fits columns based on available space 
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
-	max-width: 125rem; /* Constrains line lengths while utilizing width */
+	max-width: 125rem; // constrains line lengths while utilising width
 	margin: 0 auto;
 	margin: 1rem 0;
 
