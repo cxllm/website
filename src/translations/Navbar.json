@@ -6,5 +6,9 @@
 	"projects": {
 		"en": "Projects",
 		"fr": "Projets"
+	},
+	"home": {
+		"en": "Home",
+		"fr": "Page d'Acceuil"
 	}
 }

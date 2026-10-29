@@ -9,6 +9,17 @@ div.justify {
 	text-align: justify;
 }
 
+// nav bar styles for active/inactive/hover
+.nav-link {
+	color: #fffa !important;
+}
+.nav-link.active {
+	color: #fff !important;
+}
+.nav-link:hover {
+	color: var(--accent) !important;
+}
+
 // setup for content sections
 .content {
 	flex: 1 0 auto; // fills content in the middle of the page
@@ -36,7 +47,7 @@ div.justify {
 // generic grid container for divs
 .grid-container {
 	display: grid;
-	// automatically fits columns based on available space 
+	// automatically fits columns based on available space
 	grid-template-columns: 1fr 1fr;
 	gap: 1rem;
 	max-width: 125rem; // constrains line lengths while utilising width
